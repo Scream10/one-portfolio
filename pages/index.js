@@ -82,31 +82,32 @@ export default function Home() {
           </div>
 
           <div className="row">
-          <div class="card-group">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Développement</h5>
-                  <p class="card-text">Site WordPress</p>
-                  <p class="card-text">Site E-commerce</p>
-                  <p class="card-text">Site Sur Mesure</p>
+          <div className="skills">
+              <div className="skill">
+                <div className="skill-img">
+                  <img src="undraw_programming_2svr.png" alt="logo development" />
                 </div>
+                <h3 className="skill-title">Développement</h3>
+                <div className="skill-separator"></div>
+                <p className="skill-bullet">Site WordPress</p>
+                <p className="skill-bullet">Site E-commerce</p>
+                <p className="skill-bullet">Site Sur Mesure</p>
               </div>
-              <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Refonte</h5>
-                  <p class="card-text">Maquette UI/UX</p>
-                  <p class="card-text">Intégration</p>
+              <div className="skill">
+                <div className="skill-img">
+                  <img src="undraw_complete_design_ongo.png" alt="logo design" />
                 </div>
+                <h3 className="skill-title">Refonte</h3>
+                <p className="skill-bullet">Maquette UI/UX</p>
+                <p className="skill-bullet">Intégration</p>
               </div>
-              <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Maintenance</h5>
-                  <p class="card-text">SEO</p>
-                  <p class="card-text">Mise à jour</p>
+              <div className="skill">
+                <div className="skill-img">
+                  <img src="undraw_maintenance_cn7j.png" alt="logo maintenance" />
                 </div>
+                <h3 className="skill-title">Maintenance</h3>
+                <p className="skill-bullet">SEO</p>
+                <p className="skill-bullet">Mise à jour</p>
               </div>
             </div>
           </div>

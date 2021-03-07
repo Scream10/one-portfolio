@@ -200,4 +200,63 @@ a {
   transform: rotate(-45deg);
 }
 
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
+  flex: 1;
+  margin: 40px 0;
+  padding: 0 80px;
+}
+.skills .skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: white;
+  max-width: 300px;
+  min-width: 250px;
+  margin: 16px;
+  padding: 32px 0;
+}
+.skills .skill .skill-img {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 16px;
+}
+.skills .skill .skill-img img {
+  object-fit: cover;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.skills .skill .skill-title {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.skills .skill .skill-separator {
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: linear-gradient(90deg, #0061f3 0%, #00f3d2 100%);
+  margin-top: 15px;
+}
+.skills .skill .skill-bullet {
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
 /*# sourceMappingURL=globals.css.map */
