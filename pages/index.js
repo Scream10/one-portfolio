@@ -8,6 +8,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className="home-animation--bg"></div>
+      <div className="home-animation"></div>
+
       <header className="top-bar">
         <a href="#" className="top-bar__logo">NICOLAS / DIOT</a>
         <div>
@@ -98,6 +101,7 @@ export default function Home() {
                   <img src="undraw_complete_design_ongo.png" alt="logo design" />
                 </div>
                 <h3 className="skill-title">Refonte</h3>
+                <div className="skill-separator"></div>
                 <p className="skill-bullet">Maquette UI/UX</p>
                 <p className="skill-bullet">Intégration</p>
               </div>
@@ -106,12 +110,60 @@ export default function Home() {
                   <img src="undraw_maintenance_cn7j.png" alt="logo maintenance" />
                 </div>
                 <h3 className="skill-title">Maintenance</h3>
+                <div className="skill-separator"></div>
                 <p className="skill-bullet">SEO</p>
                 <p className="skill-bullet">Mise à jour</p>
               </div>
             </div>
           </div>
+        </div>
 
+        <div className="section">
+          <div id="section-skill">
+            <div className="section-title">
+              <p>MES REALISATIONS</p>
+            </div>
+            <div className="separator-dashes">
+              <div className="separator-dash-line"></div>
+              <div className="separator-dash-line"></div>
+              <div className="separator-dash-line"></div>
+            </div>
+          </div>
+          <div className="case-container">
+            <div className="case-container-content">
+              <div className="light-header">UI/UX Design, Developpement front</div>
+              <div className="main-headline">
+                <h1 className="main-headline__headline main-headline__headline--right-aligned">Coach Me :<br/> site de sport</h1>
+                <div className="main-headline__separator main-headline__separator--right"></div>
+              </div>
+              <div className="btn-container">
+                <div className="btn-bg"></div>
+                <a href="#" className="btn-content">Découvrir</a>
+              </div>
+            </div>
+            <div className="case-container-img">
+              <img src="projet-coachme.png" alt="projet coachme" />
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="case-container">
+            <div className="case-container-img">
+              <img src="projet-coachme.png" alt="projet coachme" />
+            </div>
+            <div className="case-container-content">
+              <div className="light-header">Developpement back & front</div>
+              <div className="main-headline">
+                <h1 className="main-headline__headline main-headline__headline--right-aligned">Semi Office :<br/> portfolio de designer</h1>
+                <div className="main-headline__separator main-headline__separator--right"></div>
+              </div>
+              <div className="btn-container">
+                <div className="btn-bg"></div>
+                <a href="#" className="btn-content">Découvrir</a>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
