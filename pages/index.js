@@ -12,11 +12,14 @@ export default function Home() {
       <div className="home-animation"></div>
 
       <header className="top-bar">
-        <a href="#" className="top-bar__logo">NICOLAS / DIOT</a>
-        <div>
-          <a href="#" className="top-bar__mail">CONTACTEZ MOI</a>
+        <a href="/" className="top-bar__logo">NICOLAS / DIOT</a>
+        <a href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !" className="top-bar-info">
+          <div className="top-bar__mail">
+            <div>CONTACTEZ MOI</div>
+            <div className="top-bar__mail-underline"></div>
+          </div>
           <img className="top-bar__mail-logo" src="logo_mail.png" alt="mail logo" />
-        </div>
+        </a>
       </header>
 
       <div className="side-bar-left">
@@ -39,7 +42,7 @@ export default function Home() {
 
       <div className="main-container">
         <div className="home-hero">
-          <img src="#" alt="main logo" />
+          {/* <img src="#" alt="main logo" /> */}
         </div>
 
         <div className="section">
@@ -80,7 +83,7 @@ export default function Home() {
             </div>
           </div>
           <div className="main-headline main-headline--center">
-            <h2 className="main-headline__headline">Intégration, responsive et référencement</h2>
+            <h2 className="main-headline__headline">Développement web et intégration</h2>
             <div className="main-headline__separator main-headline__separator--center"></div>
           </div>
 
@@ -103,6 +106,7 @@ export default function Home() {
                 <h3 className="skill-title">Refonte</h3>
                 <div className="skill-separator"></div>
                 <p className="skill-bullet">Maquette UI/UX</p>
+                <p className="skill-bullet">Template WordPress</p>
                 <p className="skill-bullet">Intégration</p>
               </div>
               <div className="skill">
@@ -111,15 +115,16 @@ export default function Home() {
                 </div>
                 <h3 className="skill-title">Maintenance</h3>
                 <div className="skill-separator"></div>
-                <p className="skill-bullet">SEO</p>
                 <p className="skill-bullet">Mise à jour</p>
+                <p className="skill-bullet">Référencement / SEO</p>
+                <p className="skill-bullet">Nouvelle feature</p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="section">
-          <div id="section-skill">
+          <div id="section-work">
             <div className="section-title">
               <p>MES REALISATIONS</p>
             </div>
@@ -131,14 +136,14 @@ export default function Home() {
           </div>
           <div className="case-container">
             <div className="case-container-content">
-              <div className="light-header">UI/UX Design, Developpement front</div>
+              <div className="light-header">UI/UX, Developpement back & front</div>
               <div className="main-headline">
-                <h1 className="main-headline__headline main-headline__headline--right-aligned">Coach Me :<br/> site de sport</h1>
+                <h1 className="main-headline__headline main-headline__headline--right-aligned">Coach Me :<br/> Site de sport</h1>
                 <div className="main-headline__separator main-headline__separator--right"></div>
               </div>
               <div className="btn-container">
                 <div className="btn-bg"></div>
-                <a href="#" className="btn-content">Découvrir</a>
+                <a href="/projets/coachme" className="btn-content">Découvrir</a>
               </div>
             </div>
             <div className="case-container-img">
@@ -150,12 +155,28 @@ export default function Home() {
         <div className="section">
           <div className="case-container">
             <div className="case-container-img">
-              <img src="projet-coachme.png" alt="projet coachme" />
+              <img src="projet-AC.png" alt="projet semi-office" />
             </div>
             <div className="case-container-content">
-              <div className="light-header">Developpement back & front</div>
+              <div className="light-header light-header--left">Developpement back & front</div>
+              <div className="main-headline main-headline--left">
+                <h1 className="main-headline__headline">Semi Office :<br/> Portfolio de designer</h1>
+                <div className="main-headline__separator"></div>
+              </div>
+              <div className="btn-container btn-container--left">
+                <div className="btn-bg"></div>
+                <a href="/projets/semi-office" className="btn-content">Découvrir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="case-container">
+            <div className="case-container-content">
+              <div className="light-header">wordPress, responsive design</div>
               <div className="main-headline">
-                <h1 className="main-headline__headline main-headline__headline--right-aligned">Semi Office :<br/> portfolio de designer</h1>
+                <h1 className="main-headline__headline main-headline__headline--right-aligned">Ombeline Durey :<br/> Site en Digital Marketing</h1>
                 <div className="main-headline__separator main-headline__separator--right"></div>
               </div>
               <div className="btn-container">
@@ -163,8 +184,129 @@ export default function Home() {
                 <a href="#" className="btn-content">Découvrir</a>
               </div>
             </div>
+            <div className="case-container-img">
+              <img src="projet-ombelinedurey.png" alt="projet ombeline durey" />
+            </div>
           </div>
         </div>
+
+        <div className="section">
+          <div className="case-container">
+            <div className="case-container-img">
+              <img src="projet-AC.png" alt="projet semi-office" />
+            </div>
+            <div className="case-container-content">
+              <div className="light-header light-header--left">refonte, wordpress</div>
+              <div className="main-headline main-headline--left">
+                <h1 className="main-headline__headline main-headline__headline--small">UCHF :<br/> Union des Consuls Honoraire de France</h1>
+                <div className="main-headline__separator"></div>
+              </div>
+              <div className="btn-container btn-container--left">
+                <div className="btn-bg"></div>
+                <a href="#" className="btn-content">Découvrir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="case-container">
+            <div className="case-container-content">
+              <div className="light-header">wordPress, responsive design</div>
+              <div className="main-headline">
+                <h1 className="main-headline__headline main-headline__headline--right-aligned">Multi Gaz Sensor :<br/> Site produit médicale</h1>
+                <div className="main-headline__separator main-headline__separator--right"></div>
+              </div>
+              <div className="btn-container">
+                <div className="btn-bg"></div>
+                <a href="#" className="btn-content">Découvrir</a>
+              </div>
+            </div>
+            <div className="case-container-img">
+              <img src="projet-ombelinedurey.png" alt="projet ombeline durey" />
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="case-container">
+            <div className="case-container-img">
+              <img src="projet-AC.png" alt="projet semi-office" />
+            </div>
+            <div className="case-container-content">
+              <div className="light-header light-header--left">wordpress, responsive design</div>
+              <div className="main-headline main-headline--left">
+                <h1 className="main-headline__headline main-headline__headline--small">Partelec :<br/> Site entreprise médicale</h1>
+                <div className="main-headline__separator"></div>
+              </div>
+              <div className="btn-container btn-container--left">
+                <div className="btn-bg"></div>
+                <a href="#" className="btn-content">Découvrir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="case-container">
+            <div className="case-container-content">
+              <div className="light-header">integration, bootstrap</div>
+              <div className="main-headline">
+                <h1 className="main-headline__headline main-headline__headline--right-aligned">Votre Garage Bois :<br/> Intégration d'une maquette</h1>
+                <div className="main-headline__separator main-headline__separator--right"></div>
+              </div>
+              <div className="btn-container">
+                <div className="btn-bg"></div>
+                <a href="#" className="btn-content">Découvrir</a>
+              </div>
+            </div>
+            <div className="case-container-img">
+              <img src="projet-ombelinedurey.png" alt="projet ombeline durey" />
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div id="section-company">
+            <div className="section-title">
+              <p>ILS M'ONT FAIT CONFIANCE</p>
+            </div>
+            <div className="separator-dashes">
+              <div className="separator-dash-line"></div>
+              <div className="separator-dash-line"></div>
+              <div className="separator-dash-line"></div>
+            </div>
+          </div>
+
+          <div className="companies">
+            <div className="company">
+              <img src="logo-uchf.png" alt="logo UCHF" />
+            </div>
+            <div className="company">
+              <img src="logo-multi-gaz-sensor.png" alt="logo multi gaz sensor" />
+            </div>
+            <div className="company">
+              <img src="logo-facton.jpg" alt="logo faton" />
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="p-center">
+            <p>
+              <br />
+              Une question ? Un devis ? N'hésitez pas à me contacter par mail, je vous répondrais dans les plus brefs délais.              
+            </p>
+          </div>
+          <a href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !" className="contact-container">
+            <div className="p-contact">nicolasdiot10@gmail.com</div>
+            <div className="contact-email-underline"></div>
+          </a>
+        </div>
+
+        <footer>
+          <a href="#">mentions legales</a>
+        </footer>
 
       </div>
     </div>
