@@ -213,7 +213,7 @@ export default function Home() {
               </div>
               <div className="btn-container">
                 <div className="btn-bg"></div>
-                <Link href="projets/ombelinedurey">
+                <Link href="/projets/ombelinedurey">
                   <a className="btn-content">Découvrir</a>
                 </Link>
               </div>

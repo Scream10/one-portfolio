@@ -73,7 +73,7 @@ export default function CoachMe() {
             <div className="project-information__content">
               <div className="project-information__header">Site</div>
               <div className="project-information__information">
-                <Link href="https://www.ombelinedurey.com/" >
+                <Link href="https://www.ombelinedurey.com/">
                   <a target="_blank">
                     <img src="../logo-chain.png" alt="logo lien site" />
                   </a>
