@@ -87,7 +87,7 @@ export default function CoachMe() {
           <div className="section">
             <div className="project-concept">
               <div className="project-concept__img">
-                  <img src="../projet-ac.png" alt="projet semi office" />
+                  <img src="../projet-SEMIOFFICE.png" alt="projet semi office" />
                 </div>
                 <div className="project-concept__content">
                   <div className="main-headline main-headline--left">
@@ -95,12 +95,9 @@ export default function CoachMe() {
                     <div className="main-headline__separator"></div>
                   </div>
                   <div className="project-concept__info">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Semi Office est le portfolio d'Antoine Chauvin, un designer d'objets et d'espaces travaillant
+                    à Paris et à Marseille. Le site a été pensé comment étant une galerie où l'on parcours les différents 
+                    projets qu'Antoine réalise depuis plusieurs années.
                   </div>
                 </div>
               </div>

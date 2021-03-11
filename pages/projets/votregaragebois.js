@@ -93,12 +93,9 @@ export default function CoachMe() {
                     <div className="main-headline__separator"></div>
                   </div>
                   <div className="project-concept__info">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Pour l'Agence Facton, j'ai réalisé l'intégration de la page d'accueil d'après une maquette Illustrator.
+                    L'intégration a été réalisé en HTML, CSS et Bootstrap. Le site votre-garage-bois.fr est 
+                    l'un des meilleurs dans son domaine en France.
                   </div>
                 </div>
               </div>
@@ -119,10 +116,8 @@ export default function CoachMe() {
                     <div className="main-headline__separator"></div>
                   </div>
                   <div className="project-concept__info">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit.
+                    À l'aide de bootstrap le site est responsive design, c'est à dire qu'il s'adapte à tous les écrans,
+                    ordinateur, tablette et téléphone. 
                   </div>
                 </div>
                 <div className="project-concept__img project-concept__img--mobile">

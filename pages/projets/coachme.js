@@ -96,12 +96,9 @@ export default function CoachMe() {
                     <div className="main-headline__separator"></div>
                   </div>
                   <div className="project-concept__info">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    CoachMe représente l'exercice final que nous devions créer à la fin de la formation en 
+                    développement web à THP, The Hacking Project. Avec 4 autres développeurs, nous 
+                    avons créé le site CoachMe sur lequel j'étais principalement responsable de la partie UI/UX et front-end.
                   </div>
                 </div>
               </div>

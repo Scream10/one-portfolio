@@ -93,12 +93,9 @@ export default function CoachMe() {
                     <div className="main-headline__separator"></div>
                   </div>
                   <div className="project-concept__info">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Le site associatif de l'UCHF, Union des Consuls Honoraires de France, regroupe
+                    toute l'actualité et les information en lien avec le Consulat et les Consuls de France.
+                    Pour ce client, j'ai réalisé une refonte d'un site existant et ajouter de nouvelles fonctionnalités.
                   </div>
                 </div>
               </div>
@@ -119,10 +116,8 @@ export default function CoachMe() {
                     <div className="main-headline__separator"></div>
                   </div>
                   <div className="project-concept__info">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit.
+                    Le site est réalisé avec WordPress ce qui facilite l'accessibilité en version mobile.
+                    Et cela permet de booster la présence de l'entreprise sur le web !
                   </div>
                 </div>
                 <div className="project-concept__img project-concept__img--mobile">

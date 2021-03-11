@@ -88,7 +88,13 @@ export default function Home() {
                 <h1 className="main-headline__headline">Nicolas Diot, Développeur orienté Front basé à Troyes et à Paris.</h1>
                 <div className="main-headline__separator"></div>
               </div>
-              <p className="p-large"><span className="text-span-24">My goal is to help people build better and more meaningful products.</span> With a strong background in UX & UI design, I make use of iterative hands-on processes and follow a human-centric design approach. My work ranges from strategic planning and rough prototyping in the early stages, to creating a strong visual design language, all of which increases the value of both the brand and the product.</p>
+              <p className="p-large">
+                Passionné par la technologie, je me suis formé au développement web puis j'ai obtenu une certification Bac +3 dans ce domaine. Rapidement 
+                j'ai consolidé mes compétences Front End en apprenant quotidiennement de nouveaux outils tels
+                que React, Next, Scss, et d'autres. 
+                <br/>Je serai ravi de développer de nouveaux projets, n'hésitez pas à me contacter pour me 
+                faire part de vos idées.
+              </p>
             </div>
           </div>
         </div>
@@ -179,7 +185,7 @@ export default function Home() {
         <div className="section">
           <div className="case-container">
             <div className="case-container-img">
-              <img src="projet-AC.png" alt="projet semi-office" />
+              <img src="projet-SEMIOFFICE.png" alt="projet semi-office" />
             </div>
             <div className="case-container-content">
               <div className="light-header light-header--left">Developpement back & front</div>
