@@ -16,7 +16,7 @@ export default function Home() {
         <Link href="/">
           <a className="top-bar__logo">NICOLAS / DIOT</a>
         </Link>
-        <Link href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !">
+        <Link href="mailto:nicolasdiot10@gmail.com?subject=Travaillons%20ensemble!">
           <a className="top-bar-info">
             <div className="top-bar__mail">
               <div>CONTACTEZ MOI</div>

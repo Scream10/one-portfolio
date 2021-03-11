@@ -17,7 +17,7 @@ export default function Home() {
         <Link href="/">
           <a className="top-bar__logo">NICOLAS / DIOT</a>
         </Link>
-        <Link href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !">
+        <Link href="mailto:nicolasdiot10@gmail.com?subject=Travaillons%20ensemble!">
           <a className="top-bar-info">
             <div className="top-bar__mail">
               <div>CONTACTEZ MOI</div>
@@ -313,7 +313,7 @@ export default function Home() {
               Une question ? Un devis ? N'hésitez pas à me contacter par mail, je vous répondrais dans les plus brefs délais.              
             </p>
           </div>
-          <Link href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !">
+          <Link href="mailto:nicolasdiot10@gmail.com?subject=Travaillons%20ensemble!">
             <a className="contact-container">
               <div className="p-contact">nicolasdiot10@gmail.com</div>
               <div className="contact-email-underline"></div>
