@@ -4,8 +4,7 @@ Retrouvez le lien de mon portfolio : [ici](https://nicolasdiot.com/)
 
 ## Contexte
 
-Je suis fier de vous présenter mon portfolio ! C'est une première version fonctionnelleIl est en constante évolution
-
+Je suis fier de vous présenter mon portfolio ! C'est une première version fonctionnelle, qui sera amené par la suite à recevoir plusieurs améliorations !
 ### Outils utilisées
 
 * React.js
