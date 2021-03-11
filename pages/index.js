@@ -1,25 +1,31 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
+import Tilt from 'react-tilt';
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Nicolas Diot | Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="../favicon-n.png" />
       </Head>
 
       <div className="home-animation--bg"></div>
       <div className="home-animation"></div>
 
       <header className="top-bar">
-        <a href="/" className="top-bar__logo">NICOLAS / DIOT</a>
-        <a href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !" className="top-bar-info">
-          <div className="top-bar__mail">
-            <div>CONTACTEZ MOI</div>
-            <div className="top-bar__mail-underline"></div>
-          </div>
-          <img className="top-bar__mail-logo" src="logo_mail.png" alt="mail logo" />
-        </a>
+        <Link href="/">
+          <a className="top-bar__logo">NICOLAS / DIOT</a>
+        </Link>
+        <Link href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !">
+          <a className="top-bar-info">
+            <div className="top-bar__mail">
+              <div>CONTACTEZ MOI</div>
+              <div className="top-bar__mail-underline"></div>
+            </div>
+            <img className="top-bar__mail-logo" src="logo_mail.png" alt="mail logo" />
+          </a>
+        </Link>
       </header>
 
       <div className="side-bar-left">
@@ -27,23 +33,39 @@ export default function Home() {
       </div>
 
       <div className="side-bar-right">
-        <a href="https://www.linkedin.com/in/nicolas-diot-96b0b313a/" target="_blank">
-          <img className="logo-social-linkedin" src="logo_linkedin.png" alt="linkedin logo" />
-        </a>
-        <a href="https://www.malt.fr/profile/nicolasdiot" target="_blank">
-          <img className="logo-social" src="logo_malt.png" alt="malt logo" />
-        </a>
-        <a href="https://github.com/Scream10" target="_blank">
-          <img className="logo-social" src="logo_github.png" alt="github logo" />
-        </a>
+        <Link href="https://www.linkedin.com/in/nicolas-diot-96b0b313a/">
+          <a target="_blank">
+            <img className="logo-social-linkedin" src="logo_linkedin.png" alt="linkedin logo" />
+          </a>
+        </Link>
+        <Link href="https://www.malt.fr/profile/nicolasdiot" >
+          <a target="_blank">
+            <img className="logo-social" src="logo_malt.png" alt="malt logo" />
+          </a>
+        </Link>
+        <Link href="https://github.com/Scream10">
+          <a target="_blank">
+            <img className="logo-social" src="logo_github.png" alt="github logo" />
+          </a>
+        </Link>
       </div>
 
       <div className="bottom-bar"></div>
 
       <div className="main-container">
-        <div className="home-hero">
-          {/* <img src="#" alt="main logo" /> */}
-        </div>
+        <Tilt className="Tilt" options={{ max : 24, scale: .9, perspective: 1000, transition: true }}>
+          <div className="Tilt-inner">
+            <div className="home-hero">
+              <p>Nicolas Diot,<br />Développeur web</p>
+              <div className="home-hero__circle home-hero__circle--1"></div>
+              <div className="home-hero__circle home-hero__circle--2"></div>
+              <div className="home-hero__circle home-hero__circle--3"></div>
+              <div className="home-hero__circle home-hero__circle--4"></div>
+              <img src="logo-arrow-down.png" alt="logo arrow down" className="home-hero__scroll" />
+            </div>
+          </div>
+        </Tilt>
+        
 
         <div className="section">
           <div id="section-about">
@@ -63,7 +85,7 @@ export default function Home() {
             </div>
             <div className="about-content">
               <div className="main-headline">
-                <h1 className="main-headline__headline">Nicolas Diot, Développeur Front et Intégrateur basé à Troyes et à Paris.</h1>
+                <h1 className="main-headline__headline">Nicolas Diot, Développeur orienté Front basé à Troyes et à Paris.</h1>
                 <div className="main-headline__separator"></div>
               </div>
               <p className="p-large"><span className="text-span-24">My goal is to help people build better and more meaningful products.</span> With a strong background in UX & UI design, I make use of iterative hands-on processes and follow a human-centric design approach. My work ranges from strategic planning and rough prototyping in the early stages, to creating a strong visual design language, all of which increases the value of both the brand and the product.</p>
@@ -143,7 +165,9 @@ export default function Home() {
               </div>
               <div className="btn-container">
                 <div className="btn-bg"></div>
-                <a href="/projets/coachme" className="btn-content">Découvrir</a>
+                <Link href="/projets/coachme">
+                  <a className="btn-content">Découvrir</a>
+                </Link>
               </div>
             </div>
             <div className="case-container-img">
@@ -165,7 +189,9 @@ export default function Home() {
               </div>
               <div className="btn-container btn-container--left">
                 <div className="btn-bg"></div>
-                <a href="/projets/semi-office" className="btn-content">Découvrir</a>
+                <Link href="/projets/semioffice">
+                  <a className="btn-content">Découvrir</a>
+                </Link>
               </div>
             </div>
           </div>
@@ -181,7 +207,9 @@ export default function Home() {
               </div>
               <div className="btn-container">
                 <div className="btn-bg"></div>
-                <a href="#" className="btn-content">Découvrir</a>
+                <Link href="projets/ombelinedurey">
+                  <a className="btn-content">Découvrir</a>
+                </Link>
               </div>
             </div>
             <div className="case-container-img">
@@ -193,7 +221,7 @@ export default function Home() {
         <div className="section">
           <div className="case-container">
             <div className="case-container-img">
-              <img src="projet-AC.png" alt="projet semi-office" />
+              <img src="projet-UNIONCONSUL.png" alt="projet semi-office" />
             </div>
             <div className="case-container-content">
               <div className="light-header light-header--left">refonte, wordpress</div>
@@ -203,7 +231,9 @@ export default function Home() {
               </div>
               <div className="btn-container btn-container--left">
                 <div className="btn-bg"></div>
-                <a href="#" className="btn-content">Découvrir</a>
+                <Link href="projets/uchf">
+                  <a className="btn-content">Découvrir</a>
+                </Link>
               </div>
             </div>
           </div>
@@ -212,18 +242,20 @@ export default function Home() {
         <div className="section">
           <div className="case-container">
             <div className="case-container-content">
-              <div className="light-header">wordPress, responsive design</div>
+              <div className="light-header">wordpress, responsive design</div>
               <div className="main-headline">
                 <h1 className="main-headline__headline main-headline__headline--right-aligned">Multi Gaz Sensor :<br/> Site produit médicale</h1>
                 <div className="main-headline__separator main-headline__separator--right"></div>
               </div>
               <div className="btn-container">
                 <div className="btn-bg"></div>
-                <a href="#" className="btn-content">Découvrir</a>
+                <Link href="projets/multigazsensor">
+                  <a className="btn-content">Découvrir</a>
+                </Link>
               </div>
             </div>
             <div className="case-container-img">
-              <img src="projet-ombelinedurey.png" alt="projet ombeline durey" />
+              <img src="projet-MULTI.png" alt="projet ombeline durey" />
             </div>
           </div>
         </div>
@@ -231,37 +263,20 @@ export default function Home() {
         <div className="section">
           <div className="case-container">
             <div className="case-container-img">
-              <img src="projet-AC.png" alt="projet semi-office" />
+              <img src="projet-GARAGEBOIS.png" alt="projet votre garage bois" />
             </div>
             <div className="case-container-content">
-              <div className="light-header light-header--left">wordpress, responsive design</div>
+              <div className="light-header light-header--left">integration, bootstrap</div>
               <div className="main-headline main-headline--left">
-                <h1 className="main-headline__headline main-headline__headline--small">Partelec :<br/> Site entreprise médicale</h1>
+                <h1 className="main-headline__headline main-headline__headline--small">Votre Garage Bois :<br/> Intégration d'une maquette</h1>
                 <div className="main-headline__separator"></div>
               </div>
               <div className="btn-container btn-container--left">
                 <div className="btn-bg"></div>
-                <a href="#" className="btn-content">Découvrir</a>
+                <Link href="projets/votregaragebois">
+                  <a className="btn-content">Découvrir</a>
+                </Link>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="section">
-          <div className="case-container">
-            <div className="case-container-content">
-              <div className="light-header">integration, bootstrap</div>
-              <div className="main-headline">
-                <h1 className="main-headline__headline main-headline__headline--right-aligned">Votre Garage Bois :<br/> Intégration d'une maquette</h1>
-                <div className="main-headline__separator main-headline__separator--right"></div>
-              </div>
-              <div className="btn-container">
-                <div className="btn-bg"></div>
-                <a href="#" className="btn-content">Découvrir</a>
-              </div>
-            </div>
-            <div className="case-container-img">
-              <img src="projet-ombelinedurey.png" alt="projet ombeline durey" />
             </div>
           </div>
         </div>
@@ -298,17 +313,22 @@ export default function Home() {
               Une question ? Un devis ? N'hésitez pas à me contacter par mail, je vous répondrais dans les plus brefs délais.              
             </p>
           </div>
-          <a href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !" className="contact-container">
-            <div className="p-contact">nicolasdiot10@gmail.com</div>
-            <div className="contact-email-underline"></div>
-          </a>
+          <Link href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !">
+            <a className="contact-container">
+              <div className="p-contact">nicolasdiot10@gmail.com</div>
+              <div className="contact-email-underline"></div>
+            </a>
+          </Link>
         </div>
 
         <footer>
-          <a href="#">mentions legales</a>
+          <Link href="/mentions-legales">
+            <a>mentions legales</a>
+          </Link>
         </footer>
 
       </div>
     </div>
+    
   )
 }

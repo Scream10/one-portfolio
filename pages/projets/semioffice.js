@@ -1,25 +1,30 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
 
 export default function CoachMe() {
   return (
     <div>
       <Head>
-        <title>Nicolas Diot | CoachMe</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Nicolas Diot | Semi Office</title>
+        <link rel="icon" href="../favicon-n.png" />
       </Head>
 
       <div className="home-animation--bg"></div>
       <div className="home-animation"></div>
 
       <header className="top-bar">
-        <a href="/" className="top-bar__logo">NICOLAS / DIOT</a>
-        <a href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !" className="top-bar-info">
-          <div className="top-bar__mail">
-            <div>CONTACTEZ MOI</div>
-            <div className="top-bar__mail-underline"></div>
-          </div>
-          <img className="top-bar__mail-logo" src="../logo_mail.png" alt="mail logo" />
-        </a>
+        <Link href="/">
+          <a className="top-bar__logo">NICOLAS / DIOT</a>
+        </Link>
+        <Link href="mailto:nicolasdiot10@gmail.com?subject=Travaillons ensemble !">
+          <a className="top-bar-info">
+            <div className="top-bar__mail">
+              <div>CONTACTEZ MOI</div>
+              <div className="top-bar__mail-underline"></div>
+            </div>
+            <img className="top-bar__mail-logo" src="../logo_mail.png" alt="mail logo" />
+          </a>
+        </Link>
       </header>
 
       <div className="side-bar-left">
@@ -27,15 +32,21 @@ export default function CoachMe() {
       </div>
 
       <div className="side-bar-right">
-        <a href="https://www.linkedin.com/in/nicolas-diot-96b0b313a/" target="_blank">
-          <img className="logo-social-linkedin" src="../logo_linkedin.png" alt="linkedin logo" />
-        </a>
-        <a href="https://www.malt.fr/profile/nicolasdiot" target="_blank">
-          <img className="logo-social" src="../logo_malt.png" alt="malt logo" />
-        </a>
-        <a href="https://github.com/Scream10" target="_blank">
-          <img className="logo-social" src="../logo_github.png" alt="github logo" />
-        </a>
+        <Link href="https://www.linkedin.com/in/nicolas-diot-96b0b313a/">
+          <a target="_blank">
+            <img className="logo-social-linkedin" src="../logo_linkedin.png" alt="linkedin logo" />
+          </a>
+        </Link>
+        <Link href="https://www.malt.fr/profile/nicolasdiot" >
+          <a target="_blank">
+            <img className="logo-social" src="../logo_malt.png" alt="malt logo" />
+          </a>
+        </Link>
+        <Link href="https://github.com/Scream10">
+          <a target="_blank">
+            <img className="logo-social" src="../logo_github.png" alt="github logo" />
+          </a>
+        </Link>
       </div>
 
       <div className="bottom-bar"></div>
@@ -64,9 +75,11 @@ export default function CoachMe() {
             <div className="project-information__content">
               <div className="project-information__header">Site</div>
               <div className="project-information__information">
-                <a href="http://www.semi-office.eu/" target="_blank">
-                  <img src="../logo-chain.png" alt="logo lien site" />
-                </a>
+                <Link href="http://www.semi-office.eu/">
+                  <a target="_blank">
+                    <img src="../logo-chain.png" alt="logo lien site" />
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -102,7 +115,20 @@ export default function CoachMe() {
 
           <div className="section"></div>
           <div className="section">
-
+            <div className="project-nav">
+              <Link href="../projets/coachme">
+                <a className="project-nav__prev">
+                  <p>Projet précédent</p>
+                  <img src="../logo-arrow-down.png" alt="logo arrow prev" />
+                </a>
+              </Link>
+              <Link href="../projets/ombelinedurey">
+                <a className="project-nav__next">
+                  <p>Projet suivant</p>
+                  <img src="../logo-arrow-down.png" alt="logo arrow next" />
+                </a>
+              </Link>
+            </div>
           </div>
           
         </div>

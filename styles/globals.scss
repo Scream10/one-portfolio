@@ -172,6 +172,114 @@ a {
   margin-top: 40px;
   padding-right: 80px;
   padding-left: 80px;
+  .Tilt {
+    transform-style: preserve-3d;
+  }
+  .home-hero {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-transform: uppercase;
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      line-height: 64px;
+      color: #000;
+      z-index: 2;
+    }
+    .home-hero__circle {
+      position: absolute;
+      min-height: 80px;
+      min-width: 80px;
+      background: #000;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .home-hero__circle--1 {
+      background: rgba(0,97,243,1);
+      top: 80%;
+      left: 30%;
+      height: 120px;
+      width: 120px;
+      transform: translateZ(-40px);
+      animation: fadeInTop 1s ease-in;
+      animation-delay: 1s;
+    }
+    .home-hero__circle--2 {
+      background: rgba(0,97,243,.7);
+      top: 5%;
+      left: 40%;
+      transform: translateZ(40px);
+      animation: fadeInBottom .7s ease-in;
+      animation-delay: 1s;
+    }
+    .home-hero__circle--3 {
+      background: rgba(0,243,210,1);
+      top: 40%;
+      right: 8%;
+      height: 230px;
+      width: 230px;
+      transform: translateZ(70px);
+      animation: fadeInTop2 .8s ease-in;
+      animation-delay: 1s;
+    }
+    .home-hero__circle--4 {
+      background: rgba(0,243,210,.5);
+      top: 15%;
+      left: 0%;
+      width: 140px;
+      height: 140px;
+      transform: translateZ(25px);
+      animation: fadeInBottom2 .7s ease-in;
+      animation-delay: 1s;
+    }
+    .home-hero__scroll {
+      position: absolute;
+      width: 50px;
+      height: 60px;
+      bottom: 0;
+    }
+  }
+}
+
+@keyframes fadeInTop {
+  0% { 
+    top: 0;
+  } 
+  100% {
+    top: 80%;
+  }
+}
+
+@keyframes fadeInTop2 {
+  0% { 
+    top: 100%;
+  } 
+  100% {
+    top: 40%;
+  }
+}
+
+@keyframes fadeInBottom {
+  0% { 
+    top: 100%;
+  } 
+  100% {
+    top: 5%;
+  }
+}
+
+@keyframes fadeInBottom2 {
+  0% { 
+    top: 100%;
+  } 
+  100% {
+    top: 15%;
+  }
 }
 
 .main-container--project {
@@ -184,7 +292,7 @@ a {
   padding: 80px 0;
   margin-right: auto;
   margin-left: auto;
-  #section-about, #section-skill, #section-work, #section-companyf {
+  #section-about, #section-skill, #section-work, #section-company, #section-legal {
     margin-bottom: 32px;
   }
   .section-title {
@@ -218,6 +326,14 @@ a {
       } 
     }
   }
+}
+
+.section--mobile {
+  padding-bottom: 0px;
+}
+
+.section--mobileTop {
+  padding-top: 0px;
 }
 
 .main-headline {
@@ -514,6 +630,15 @@ footer {
     height: 100%;
     object-fit: cover;
   }
+  #fond-uchf {
+    object-position: 0% 37%;
+  }
+  #fond-multi {
+    object-position: 0% 88%;
+  }
+  #fond-vgb {
+    object-position: 0% 6%;
+  }
   .project-title {
     background: rgba(0, 0, 0, .5);
     width: 100%;
@@ -528,6 +653,9 @@ footer {
       font-size: 48px;
       color: white;
       height: calc(100% + 48px);
+    }
+    .text-center {
+      text-align: center;
     }
   }
 }
@@ -594,6 +722,15 @@ footer {
     }
   }
 }
+.project-concept--mobile {
+  margin-top: 80px;
+  .project-concept__img--mobile img {
+    position: relative;
+    top: -100px;
+    width: 70%;
+    margin-left: 20px;
+  }
+}
 
 .project-img {
   display: flex;
@@ -611,5 +748,59 @@ footer {
     top: 80px;
     right: 50px;
     z-index: 1;
+  }
+}
+
+.p-legal {
+  display: block;
+  max-width: 660px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+  strong {
+    font-weight: 600;
+    font-size: 21px;
+  }
+}
+
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .project-nav__next {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &:hover img {
+      transform: translateX(13px) rotate(-90deg);
+    }
+    img {
+      transform: rotate(-90deg);
+      transition: .2s ease-in-out;
+    }
+  }
+  .project-nav__prev {
+    &:hover img {
+      transform: translateX(-13px) rotate(90deg);
+    }
+    img {
+      transform: rotate(90deg);
+      transition: .2s ease-in-out;
+    }
+  }
+
+  .project-nav__prev img, .project-nav__next img {
+    max-width: 30px;
+    width: 100%;
+  }
+  .project-nav__prev p, .project-nav__next p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 0;
   }
 }

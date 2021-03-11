@@ -5,7 +5,7 @@ export default function CoachMe() {
   return (
     <div>
       <Head>
-        <title>Nicolas Diot | CoachMe</title>
+        <title>Nicolas Diot | Votre Garage Bois</title>
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
@@ -52,9 +52,9 @@ export default function CoachMe() {
       <div className="bottom-bar"></div>
 
       <div className="project-banner">
-        <img src="../coachme-3.png" alt="coachme" />
+        <img src="../fond-vgb.png" alt="projet UCHF" id="fond-vgb" />
         <div className="project-title">
-          <h2>Coach Me</h2>
+          <h2 className="text-center">Votre Garage Bois</h2>
         </div>
       </div>
 
@@ -63,20 +63,17 @@ export default function CoachMe() {
           <div className="project-information">
             <div className="project-information__content">
               <div className="project-information__header">Mon rôle</div>
-              <div className="project-information__information">Développeur Back & Front</div>
-              <div className="project-information__information">UI/UX Design</div>
+              <div className="project-information__information">Intégrateur</div>
             </div>
             <div className="project-information__content">
               <div className="project-information__header">Outils</div>
               <div className="project-information__information">HTML / CSS</div>
-              <div className="project-information__information">Ruby</div>
-              <div className="project-information__information">Ruby on Rails</div>
-              <div className="project-information__information">Stripe</div>
+              <div className="project-information__information">Bootstrap</div>
             </div>
             <div className="project-information__content">
               <div className="project-information__header">Site</div>
               <div className="project-information__information">
-                <Link href="http://coachme.herokuapp.com/" >
+                <Link href="https://www.votre-garage-bois.fr/">
                   <a target="_blank">
                     <img src="../logo-chain.png" alt="logo lien site" />
                   </a>
@@ -88,7 +85,7 @@ export default function CoachMe() {
           <div className="section">
             <div className="project-concept">
               <div className="project-concept__img">
-                  <img src="../projet-coachme.png" alt="projet coachme" />
+                  <img src="../projet-GARAGEBOIS.png" alt="projet votre garage bois" />
                 </div>
                 <div className="project-concept__content">
                   <div className="main-headline main-headline--left">
@@ -109,21 +106,40 @@ export default function CoachMe() {
 
           <div className="section">
             <div className="project-img">
-              <img src="../coachme-1.png" alt="projet coachme" className="project-img" />
-              <img src="../coachme-2.png" alt="projet coachme" className="project-img project-img--2" />
+              <img src="../fond-vgb.png" alt="projet votre garage bois" className="project-img" />
+              <img src="../fond-vgb-2.png" alt="projet votre garage bois" className="project-img project-img--2" />
             </div>
           </div>
 
-          <div className="section"></div>
-          <div className="section">
+          <div className="section section--mobile">
+            <div className="project-concept project-concept--mobile">
+                <div className="project-concept__content">
+                  <div className="main-headline main-headline--left">
+                    <h1 className="main-headline__headline main-headline__headline--small">Version mobile</h1>
+                    <div className="main-headline__separator"></div>
+                  </div>
+                  <div className="project-concept__info">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit.
+                  </div>
+                </div>
+                <div className="project-concept__img project-concept__img--mobile">
+                <img src="../iphone-GARAGEBOIS.png" alt="projet votre garage bois" />
+                </div>
+              </div>
+          </div>
+
+          <div className="section section--mobileTop">
             <div className="project-nav">
-              <Link href="../projets/votregaragebois">
+              <Link href="../projets/multigazsensor">
                 <a className="project-nav__prev">
                   <p>Projet précédent</p>
                   <img src="../logo-arrow-down.png" alt="logo arrow prev" />
                 </a>
               </Link>
-              <Link href="../projets/semioffice">
+              <Link href="../projets/coachme">
                 <a className="project-nav__next">
                   <p>Projet suivant</p>
                   <img src="../logo-arrow-down.png" alt="logo arrow next" />
