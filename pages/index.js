@@ -237,7 +237,7 @@ export default function Home() {
               </div>
               <div className="btn-container btn-container--left">
                 <div className="btn-bg"></div>
-                <Link href="projets/uchf">
+                <Link href="/projets/uchf">
                   <a className="btn-content">Découvrir</a>
                 </Link>
               </div>
@@ -255,7 +255,7 @@ export default function Home() {
               </div>
               <div className="btn-container">
                 <div className="btn-bg"></div>
-                <Link href="projets/multigazsensor">
+                <Link href="/projets/multigazsensor">
                   <a className="btn-content">Découvrir</a>
                 </Link>
               </div>
@@ -279,7 +279,7 @@ export default function Home() {
               </div>
               <div className="btn-container btn-container--left">
                 <div className="btn-bg"></div>
-                <Link href="projets/votregaragebois">
+                <Link href="/projets/votregaragebois">
                   <a className="btn-content">Découvrir</a>
                 </Link>
               </div>
