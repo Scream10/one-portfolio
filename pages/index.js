@@ -7,6 +7,8 @@ export default function Home() {
     <div>
       <Head>
         <title>Nicolas Diot | Portfolio</title>
+        <meta description="Nicolas Diot, développeur freelance spécialisé en front React et intégrateur, situé à Troyes et à Paris.
+          Je créer des sites vitrines, e-commerces, et je m'occupe de la maintenance de vos sites internet." />
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
@@ -34,17 +36,17 @@ export default function Home() {
 
       <div className="side-bar-right">
         <Link href="https://www.linkedin.com/in/nicolas-diot-96b0b313a/">
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer">
             <img className="logo-social-linkedin" src="logo_linkedin.png" alt="linkedin logo" />
           </a>
         </Link>
         <Link href="https://www.malt.fr/profile/nicolasdiot" >
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer">
             <img className="logo-social" src="logo_malt.png" alt="malt logo" />
           </a>
         </Link>
         <Link href="https://github.com/Scream10">
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer">
             <img className="logo-social" src="logo_github.png" alt="github logo" />
           </a>
         </Link>

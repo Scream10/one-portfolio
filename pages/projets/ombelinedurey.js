@@ -6,6 +6,8 @@ export default function CoachMe() {
     <div>
       <Head>
         <title>Nicolas Diot | Ombeline Durey</title>
+        <meta description="Pour répondre aux besoins d'Ombeline Durey en digital marketing, j'ai développé
+                    son site vitrine en utilisant WordPress."/>
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
@@ -33,17 +35,17 @@ export default function CoachMe() {
 
       <div className="side-bar-right">
         <Link href="https://www.linkedin.com/in/nicolas-diot-96b0b313a/">
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer"s>
             <img className="logo-social-linkedin" src="../logo_linkedin.png" alt="linkedin logo" />
           </a>
         </Link>
         <Link href="https://www.malt.fr/profile/nicolasdiot" >
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer"s>
             <img className="logo-social" src="../logo_malt.png" alt="malt logo" />
           </a>
         </Link>
         <Link href="https://github.com/Scream10">
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer"s>
             <img className="logo-social" src="../logo_github.png" alt="github logo" />
           </a>
         </Link>
@@ -74,7 +76,7 @@ export default function CoachMe() {
               <div className="project-information__header">Site</div>
               <div className="project-information__information">
                 <Link href="https://www.ombelinedurey.com/">
-                  <a target="_blank">
+                  <a target="_blank" rel="noreferrer"s>
                     <img src="../logo-chain.png" alt="logo lien site" />
                   </a>
                 </Link>

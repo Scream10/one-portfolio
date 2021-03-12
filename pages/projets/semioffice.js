@@ -6,6 +6,8 @@ export default function CoachMe() {
     <div>
       <Head>
         <title>Nicolas Diot | Semi Office</title>
+        <meta description="Semi Office est le portfolio d'Antoine Chauvin, un designer d'objets et d'espaces travaillant
+                    à Paris et à Marseille."/>
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
@@ -33,17 +35,17 @@ export default function CoachMe() {
 
       <div className="side-bar-right">
         <Link href="https://www.linkedin.com/in/nicolas-diot-96b0b313a/">
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer">
             <img className="logo-social-linkedin" src="../logo_linkedin.png" alt="linkedin logo" />
           </a>
         </Link>
         <Link href="https://www.malt.fr/profile/nicolasdiot" >
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer">
             <img className="logo-social" src="../logo_malt.png" alt="malt logo" />
           </a>
         </Link>
         <Link href="https://github.com/Scream10">
-          <a target="_blank">
+          <a target="_blank" rel="noreferrer">
             <img className="logo-social" src="../logo_github.png" alt="github logo" />
           </a>
         </Link>
@@ -76,7 +78,7 @@ export default function CoachMe() {
               <div className="project-information__header">Site</div>
               <div className="project-information__information">
                 <Link href="http://www.semi-office.eu/">
-                  <a target="_blank">
+                  <a target="_blank" rel="noreferrer">
                     <img src="../logo-chain.png" alt="logo lien site" />
                   </a>
                 </Link>
