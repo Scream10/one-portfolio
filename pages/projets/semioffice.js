@@ -115,13 +115,13 @@ export default function CoachMe() {
           <div className="section"></div>
           <div className="section">
             <div className="project-nav">
-              <Link href="../projets/coachme">
+              <Link href="/projets/coachme">
                 <a className="project-nav__prev">
                   <p>Projet précédent</p>
                   <img src="../logo-arrow-down.png" alt="logo arrow prev" />
                 </a>
               </Link>
-              <Link href="../projets/ombelinedurey">
+              <Link href="/projets/ombelinedurey">
                 <a className="project-nav__next">
                   <p>Projet suivant</p>
                   <img src="../logo-arrow-down.png" alt="logo arrow next" />

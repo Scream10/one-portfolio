@@ -132,13 +132,13 @@ export default function CoachMe() {
 
           <div className="section section--mobileTop">
             <div className="project-nav">
-              <Link href="../projets/semioffice">
+              <Link href="/projets/semioffice">
                 <a className="project-nav__prev">
                   <p>Projet précédent</p>
                   <img src="../logo-arrow-down.png" alt="logo arrow prev" />
                 </a>
               </Link>
-              <Link href="../projets/uchf">
+              <Link href="/projets/uchf">
                 <a className="project-nav__next">
                   <p>Projet suivant</p>
                   <img src="../logo-arrow-down.png" alt="logo arrow next" />

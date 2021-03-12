@@ -130,13 +130,13 @@ export default function CoachMe() {
 
           <div className="section section--mobileTop">
             <div className="project-nav">
-              <Link href="../projets/multigazsensor">
+              <Link href="/projets/multigazsensor">
                 <a className="project-nav__prev">
                   <p>Projet précédent</p>
                   <img src="../logo-arrow-down.png" alt="logo arrow prev" />
                 </a>
               </Link>
-              <Link href="../projets/coachme">
+              <Link href="/projets/coachme">
                 <a className="project-nav__next">
                   <p>Projet suivant</p>
                   <img src="../logo-arrow-down.png" alt="logo arrow next" />

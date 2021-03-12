@@ -237,9 +237,14 @@ a {
       animation: fadeInBottom2 .7s ease-in;
       animation-delay: 1s;
     }
+    @media (max-width: 991px) {
+      .home-hero__circle--1, .home-hero__circle--2, .home-hero__circle--3, .home-hero__circle--4 {
+        transform: none;
+      }
+    }
     .home-hero__scroll {
       position: absolute;
-      width: 50px;
+      width: 60px;
       height: 60px;
       bottom: 0;
     }
@@ -309,13 +314,26 @@ a {
     justify-content: space-around;
     align-items: stretch;
     .about-img-container {
-      width: 40%;
+      width: 50%;
       margin-top: 84px;
       margin-right: 56px;
       flex: 0 auto;
+      img {
+        border: 0;
+        min-width: 90%;
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+    @media (max-width: 991px) {
+      .about-img-container {
+        margin-top: 0;
+        width: 50%;
+      }
     }
     .about-content {
-      width: 60%;
+      width: 50%;
       .p-large {
         font-size: 24px;
         line-height: 40px;
@@ -324,7 +342,34 @@ a {
           font-weight: 500;
         }
       } 
+      @media screen and (min-width: 1000px) and (max-width: 1300px) {
+        .p-large {
+          font-size: 20px;
+          line-height: 36px;
+        }
+      }
+      @media (max-width: 991px) { 
+        .p-large {
+            font-size: 20px;
+            line-height: 36px;
+        }
+      }
     }
+    @media (max-width: 991px) {
+      .about-content {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .about-container {
+      flex-direction: column;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .section {
+    padding: 65px 0;
   }
 }
 
@@ -346,6 +391,18 @@ a {
     line-height: 64px;
     font-weight: 500;
   }
+  @media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .main-headline__headline {
+      font-size: 40px;
+      line-height: 56px;
+    }
+  }
+  @media (max-width: 991px) {
+    .main-headline__headline {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
   .main-headline__headline--right-aligned {
     text-align: end;
   }
@@ -360,6 +417,14 @@ a {
     margin-top: 15px;
   }
 }
+@media (max-width: 991px) {
+  .main-headline--offset{
+    margin-top: -312px;
+    margin-bottom: 145px;
+    margin-left: 44%;
+  }
+}
+
 .main-headline--center {
   margin-bottom: 0px;
   margin-left: 0px;
@@ -443,6 +508,7 @@ a {
     }
     .skill-bullet {
       margin-bottom: 8px;
+      margin-top: 0;
       color: #000;
       font-size: 20px;
       line-height: 36px;
@@ -468,21 +534,59 @@ a {
       text-transform: uppercase;
       margin-bottom: 15px;
     }
+    @media (max-width: 991px) {
+      .light-header {
+        font-size: 10px;
+        line-height: 18px;
+        text-align: right;
+        letter-spacing: 3px;
+      }
+    }
     .light-header--left {
       text-align: left;
     }
   }
   .case-container-img {
+    position: relative;
     width: 65%;
     height: 85%;
     max-width: 150%;
     margin-left: 5%;
     img {
+      position: relative;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+    @media (max-width: 991px) {
+      img:nth-child(n + 1) {
+        top: 15px;
+        width: 105%;
+        max-width: 170%;
+        margin-left: 56px;
+        border: 0;
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
   }
+  @media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .case-container-img:nth-child(2n + 1) {
+      left: -7%;
+    }
+    .case-container-img:nth-child(2n) {
+      left: 7%;
+    }
+    .case-container-img {
+      width: 60%;
+    }
+  }
+  @media (max-width: 991px) {
+    .case-container-img:nth-child(2n + 1) {
+      margin-left: 0;
+    }
+  }
+  
   .btn-container {
     height: 49px;
     width: 185px;
@@ -651,8 +755,10 @@ footer {
       justify-content: center;
       align-items: center;
       font-size: 48px;
+      line-height: 60px;
       color: white;
-      height: calc(100% + 48px);
+      height: 100%;
+      font-weight: 600;
     }
     .text-center {
       text-align: center;

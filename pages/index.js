@@ -86,15 +86,16 @@ export default function Home() {
               <img src="photo_profil.jpg" alt="photo nicolas diot" />
             </div>
             <div className="about-content">
-              <div className="main-headline">
+              <div className="main-headline main-headline--offset">
                 <h1 className="main-headline__headline">Nicolas Diot, Développeur orienté Front basé à Troyes et à Paris.</h1>
                 <div className="main-headline__separator"></div>
               </div>
               <p className="p-large">
-                Passionné par la technologie, je me suis formé au développement web puis j'ai obtenu une certification Bac +3 dans ce domaine. Rapidement 
-                j'ai consolidé mes compétences Front End en apprenant quotidiennement de nouveaux outils tels
-                que React, Next, Scss, et d'autres. 
-                <br/>Je serai ravi de développer de nouveaux projets, n'hésitez pas à me contacter pour me 
+                Passionné par la technologie, je me suis formé au développement web et j'ai rapidement 
+                consolidé mes compétences en Front End en apprenant quotidiennement de nouveaux outils.
+                <br/>
+                J'aime résoudre les problèmes que propose le code en y incluant créativité, innovation et design. 
+                Je serai ravi de développer de nouveaux projets, n'hésitez pas à me contacter pour me 
                 faire part de vos idées.
               </p>
             </div>
