@@ -179,7 +179,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="case-container-img">
+            <div className="case-container-img case-container-img--right">
               <img src="projet-coachme.png" alt="projet coachme" />
             </div>
           </div>
@@ -221,7 +221,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="case-container-img">
+            <div className="case-container-img case-container-img--right">
               <img src="projet-ombelinedurey.png" alt="projet ombeline durey" />
             </div>
           </div>
@@ -263,7 +263,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="case-container-img">
+            <div className="case-container-img case-container-img--right">
               <img src="projet-MULTI.png" alt="projet ombeline durey" />
             </div>
           </div>
