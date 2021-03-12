@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Nicolas Diot | Portfolio</title>
-        <meta description="Nicolas Diot, développeur freelance spécialisé en front React et intégrateur, situé à Troyes et à Paris.
+        <meta name="description" content="Nicolas Diot, développeur freelance spécialisé en front React et intégrateur, situé à Troyes et à Paris.
           Je créer des sites vitrines, e-commerces, et je m'occupe de la maintenance de vos sites internet." />
         <link rel="icon" href="../favicon-n.png" />
       </Head>

@@ -6,7 +6,7 @@ export default function CoachMe() {
     <div>
       <Head>
         <title>Nicolas Diot | UCHF</title>
-        <meta description="Le site associatif de l'UCHF, Union des Consuls Honoraires de France, regroupe
+        <meta name="description" content="Le site associatif de l'UCHF, Union des Consuls Honoraires de France, regroupe
                     toute l'actualité et les information en lien avec le Consulat et les Consuls de France."/>
         <link rel="icon" href="../favicon-n.png" />
       </Head>

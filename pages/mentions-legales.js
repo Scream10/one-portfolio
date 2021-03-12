@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Nicolas Diot | Mentions Légales</title>
-        <meta description="Nicolas Diot, développeur freelance spécialisé en front React et intégrateur, situé à Troyes et à Paris.
+        <meta name="description" content="Nicolas Diot, développeur freelance spécialisé en front React et intégrateur, situé à Troyes et à Paris.
           Ceci est la page Mentions Légales." />
         <link rel="icon" href="../favicon-n.png" />
       </Head>

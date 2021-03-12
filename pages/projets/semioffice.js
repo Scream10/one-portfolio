@@ -6,7 +6,7 @@ export default function CoachMe() {
     <div>
       <Head>
         <title>Nicolas Diot | Semi Office</title>
-        <meta description="Semi Office est le portfolio d'Antoine Chauvin, un designer d'objets et d'espaces travaillant
+        <meta name="description" content="Semi Office est le portfolio d'Antoine Chauvin, un designer d'objets et d'espaces travaillant
                     à Paris et à Marseille."/>
         <link rel="icon" href="../favicon-n.png" />
       </Head>

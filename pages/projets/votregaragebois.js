@@ -6,7 +6,7 @@ export default function CoachMe() {
     <div>
       <Head>
         <title>Nicolas Diot | Votre Garage Bois</title>
-        <meta description="Pour l'Agence Facton, j'ai réalisé l'intégration de la page d'accueil d'après une maquette.
+        <meta name="description" content="Pour l'Agence Facton, j'ai réalisé l'intégration de la page d'accueil d'après une maquette.
                     L'intégration pour votre-garage-bois a été réalisé en HTML, CSS et Bootstrap." />
         <link rel="icon" href="../favicon-n.png" />
       </Head>

@@ -6,7 +6,7 @@ export default function CoachMe() {
     <div>
       <Head>
         <title>Nicolas Diot | Ombeline Durey</title>
-        <meta description="Pour répondre aux besoins d'Ombeline Durey en digital marketing, j'ai développé
+        <meta name="description" content="Pour répondre aux besoins d'Ombeline Durey en digital marketing, j'ai développé
                     son site vitrine en utilisant WordPress."/>
         <link rel="icon" href="../favicon-n.png" />
       </Head>

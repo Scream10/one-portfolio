@@ -6,7 +6,7 @@ export default function CoachMe() {
     <div>
       <Head>
         <title>Nicolas Diot | Multi Gaz Sensor</title>
-        <meta description="Multi gaz sensor est un site produit de l'entreprise Partelec. Le site
+        <meta name="description" content="Multi gaz sensor est un site produit de l'entreprise Partelec. Le site
                     propre des produits innovants dans le domaine médicale.s" />
         <link rel="icon" href="../favicon-n.png" />
       </Head>

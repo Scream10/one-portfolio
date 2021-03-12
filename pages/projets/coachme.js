@@ -6,7 +6,7 @@ export default function CoachMe() {
     <div>
       <Head>
         <title>Nicolas Diot | CoachMe</title>
-        <meta description="CoachMe représente l'exercice final que nous devions créer à la fin de la formation en 
+        <meta name="description" content="CoachMe représente l'exercice final que nous devions créer à la fin de la formation en 
                     développement web à THP, The Hacking Project. " />
         <link rel="icon" href="../favicon-n.png" />
       </Head>
