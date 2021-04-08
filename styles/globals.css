@@ -8,7 +8,12 @@ body {
   line-height: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #000;
 }
 
@@ -109,7 +114,8 @@ a {
 .top-bar .top-bar__logo:hover {
   color: #000;
 }
-.top-bar .top-bar__mail, .top-bar .top-bar__logo {
+.top-bar .top-bar__mail,
+.top-bar .top-bar__logo {
   font-size: 14px;
   letter-spacing: 3px;
 }
@@ -238,7 +244,10 @@ a {
   animation-delay: 1s;
 }
 @media (max-width: 991px) {
-  .main-container .home-hero .home-hero__circle--1, .main-container .home-hero .home-hero__circle--2, .main-container .home-hero .home-hero__circle--3, .main-container .home-hero .home-hero__circle--4 {
+  .main-container .home-hero .home-hero__circle--1,
+.main-container .home-hero .home-hero__circle--2,
+.main-container .home-hero .home-hero__circle--3,
+.main-container .home-hero .home-hero__circle--4 {
     transform: none;
   }
 }
@@ -282,6 +291,7 @@ a {
   }
 }
 .main-container--project {
+  visibility: hidden;
   margin-top: 0;
 }
 
@@ -292,7 +302,11 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
-.section #section-about, .section #section-skill, .section #section-work, .section #section-company, .section #section-legal {
+.section #section-about,
+.section #section-skill,
+.section #section-work,
+.section #section-company,
+.section #section-legal {
   margin-bottom: 32px;
 }
 .section .section-title {
@@ -794,7 +808,11 @@ footer a:hover {
   max-width: 250px;
   margin: 10px 40px;
 }
-.project-container .project-information .project-information__content .project-information__header {
+.project-container .project-information .project-information__content .project-information__container-header {
+  overflow: hidden;
+  height: 64px;
+}
+.project-container .project-information .project-information__content .project-information__container-header .project-information__header {
   font-size: 32px;
   display: block;
   color: #000;
@@ -870,13 +888,18 @@ footer a:hover {
   justify-content: center;
   align-items: center;
 }
+.project-img div:first-child {
+  z-index: 10;
+}
 .project-img .project-img {
   position: relative;
-  width: 40%;
+  width: 80%;
   height: 500px;
   object-fit: cover;
   box-shadow: 40px 50px 30px rgba(0, 0, 0, 0.1);
-  z-index: 2;
+}
+.project-img .project-img--1 {
+  left: 20%;
 }
 .project-img .project-img--2 {
   top: 80px;
@@ -923,11 +946,13 @@ footer a:hover {
   transform: rotate(90deg);
   transition: 0.2s ease-in-out;
 }
-.project-nav .project-nav__prev img, .project-nav .project-nav__next img {
+.project-nav .project-nav__prev img,
+.project-nav .project-nav__next img {
   max-width: 30px;
   width: 100%;
 }
-.project-nav .project-nav__prev p, .project-nav .project-nav__next p {
+.project-nav .project-nav__prev p,
+.project-nav .project-nav__next p {
   color: #000;
   font-size: 14px;
   font-weight: 500;

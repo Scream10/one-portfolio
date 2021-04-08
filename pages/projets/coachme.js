@@ -1,7 +1,53 @@
+import React, { useRef, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { TweenMax, TimelineLite, Power3 } from 'gsap';
 
 export default function CoachMe() {
+
+  let app = useRef(null);
+  let images = useRef(null);
+  let concept = useRef(null);
+  let information = useRef(null);
+  let tl = new TimelineLite({delay: .4});
+
+  useEffect(() => {
+    // Information Const
+    const fristHeaderInformation = information.children[0].children[0];
+    const secondHeaderInformation = information.children[1].children[0];
+    const thirdHeaderInformation = information.children[2].children[0];
+    const firstInformation = information.children[0].children[1];
+    const secondInformation = information.children[1].children[1];
+    const thirdInformation = information.children[2].children[1];
+
+    // Concept Const
+    const headlineContent = concept.children[0].children[0];
+    const separatorContent = concept.children[0].children[1];
+    const descriptionContent = concept.children[1];
+
+    // Images Const
+    const firstImage = images.firstElementChild;
+    const lastImage = images.lastElementChild;
+
+    // Remove init flash
+    TweenMax.to(app, 0, {css: {visibility: 'visible'}})
+
+    // Concept Animation
+    tl.staggerFrom([fristHeaderInformation.children[0], secondHeaderInformation.children[0], thirdHeaderInformation.children[0]], 1, {
+      y: 64,
+      ease: Power3.easeOut,
+    }, .15)
+      .from(firstInformation, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, .6)
+      .from(secondInformation, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, .8)
+      .from(thirdInformation, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1)
+
+    // Images Animation
+    // tl.from(firstImage, 1.2, {y: 1280, ease: Power3.easeOut})
+    //   .from(firstImage.firstElementChild, 2, {scale: 1.1, ease: Power3.easeOut}, .2)
+    //   .from(lastImage, 1.2, {y: 1280, ease: Power3.easeOut}, .2)
+    //   .from(lastImage.firstElementChild, 2, {scale: 1.1, ease: Power3.easeOut}, .2)
+  }, [tl]);
+
   return (
     <div>
       <Head>
@@ -10,9 +56,6 @@ export default function CoachMe() {
                     développement web à THP, The Hacking Project. " />
         <link rel="icon" href="../favicon-n.png" />
       </Head>
-
-      <div className="home-animation--bg"></div>
-      <div className="home-animation"></div>
 
       <header className="top-bar">
         <Link href="/">
@@ -60,23 +103,33 @@ export default function CoachMe() {
         </div>
       </div>
 
-      <div className="main-container main-container--project">
+      <div className="main-container main-container--project" ref={el => app = el}>
         <div className="project-container">
-          <div className="project-information">
+          <div className="project-information" ref={el => information = el}>
             <div className="project-information__content">
-              <div className="project-information__header">Mon rôle</div>
-              <div className="project-information__information">Développeur Back & Front</div>
-              <div className="project-information__information">UI/UX Design</div>
+              <div className="project-information__container-header">
+                <div className="project-information__header">Mon rôle</div>
+              </div>
+              <div>
+                <div className="project-information__information">Développeur Back & Front</div>
+                <div className="project-information__information">UI/UX Design</div>
+              </div>
             </div>
             <div className="project-information__content">
-              <div className="project-information__header">Outils</div>
-              <div className="project-information__information">HTML / CSS</div>
-              <div className="project-information__information">Ruby</div>
-              <div className="project-information__information">Ruby on Rails</div>
-              <div className="project-information__information">Stripe</div>
+              <div className="project-information__container-header">
+                <div className="project-information__header">Outils</div>
+              </div>
+              <div>
+                <div className="project-information__information">HTML / CSS</div>
+                <div className="project-information__information">Ruby</div>
+                <div className="project-information__information">Ruby on Rails</div>
+                <div className="project-information__information">Stripe</div>
+              </div>
             </div>
             <div className="project-information__content">
-              <div className="project-information__header">Site</div>
+              <div className="project-information__container-header">
+                <div className="project-information__header">Site</div>
+              </div>
               <div className="project-information__information">
                 <Link href="http://coachme.herokuapp.com/" >
                   <a target="_blank" rel="noreferrer">
@@ -92,7 +145,7 @@ export default function CoachMe() {
               <div className="project-concept__img">
                   <img src="../projet-coachme.png" alt="projet coachme" />
                 </div>
-                <div className="project-concept__content">
+                <div className="project-concept__content" ref={el => concept = el}>
                   <div className="main-headline main-headline--left">
                     <h1 className="main-headline__headline main-headline__headline--small">Concept</h1>
                     <div className="main-headline__separator"></div>
@@ -107,9 +160,13 @@ export default function CoachMe() {
           </div>
 
           <div className="section">
-            <div className="project-img">
-              <img src="../coachme-1.png" alt="projet coachme" className="project-img" />
-              <img src="../coachme-2.png" alt="projet coachme" className="project-img project-img--2" />
+            <div className="project-img" ref={el => images = el}>
+              <div>
+                <img src="../coachme-1.png" alt="projet coachme" className="project-img project-img--1" />
+              </div>
+              <div>
+                <img src="../coachme-2.png" alt="projet coachme" className="project-img project-img--2" />
+              </div>
             </div>
           </div>
 

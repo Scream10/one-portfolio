@@ -58,7 +58,7 @@ export default function Home() {
         <Tilt className="Tilt" options={{ max : 24, scale: .9, perspective: 1000, transition: true }}>
           <div className="Tilt-inner">
             <div className="home-hero">
-              <p>Nicolas Diot,<br />Développeur web</p>
+              <p>Nicolas Diot,<br />Développeur Web</p>
               <div className="home-hero__circle home-hero__circle--1"></div>
               <div className="home-hero__circle home-hero__circle--2"></div>
               <div className="home-hero__circle home-hero__circle--3"></div>
@@ -87,7 +87,7 @@ export default function Home() {
             </div>
             <div className="about-content">
               <div className="main-headline main-headline--offset">
-                <h1 className="main-headline__headline">Nicolas Diot, Développeur orienté Front basé à Troyes et à Paris.</h1>
+                <h1 className="main-headline__headline">Nicolas Diot, Développeur Front-End basé à Troyes et à Paris.</h1>
                 <div className="main-headline__separator"></div>
               </div>
               <p className="p-large">
