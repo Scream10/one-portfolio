@@ -918,7 +918,7 @@ footer a:hover {
   align-items: center;
 }
 .project-img div:first-child {
-  z-index: 10;
+  z-index: 9;
 }
 .project-img .project-img {
   position: relative;
