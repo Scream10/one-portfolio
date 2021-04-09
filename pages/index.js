@@ -123,8 +123,8 @@ export default function Home() {
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
-      {/* <div className="home-animation--bg"></div>
-      <div className="home-animation"></div> */}
+      <div className="home-animation--bg"></div>
+      <div className="home-animation"></div>
 
       <header className="top-bar">
         <Link href="/">
