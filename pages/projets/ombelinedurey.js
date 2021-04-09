@@ -2,9 +2,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 import React, { useRef, useEffect } from 'react';
 import { TweenMax, TimelineLite, Power3 } from 'gsap';
-import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
+gsap.core.globals("ScrollTrigger", ScrollTrigger);
 
 export default function OmbelineDurey() {
 

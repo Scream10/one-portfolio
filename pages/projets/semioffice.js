@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from 'react';
 import { TweenMax, TimelineLite, Power3, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
+gsap.core.globals("ScrollTrigger", ScrollTrigger);
 
 export default function SemiOffice() {
 
