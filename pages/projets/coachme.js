@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import React, { useRef, useEffect } from 'react';
 import { TweenMax, TimelineLite, Power3, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -78,11 +78,11 @@ export default function CoachMe() {
       }
     })
     gsap.from(secondImage, {y: 500, ease: 'power3.out', duration: 1.2, scrollTrigger: {
-      trigger: secondImage,
-      start: 'top 130%',
-      end: '+=300'
-    }
-  })
+        trigger: secondImage,
+        start: 'top 130%',
+        end: '+=300'
+      }
+    })
     
   }, [tl]);
 
