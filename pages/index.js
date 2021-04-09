@@ -46,67 +46,67 @@ export default function Home() {
     })
     gsap.from(thirdSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: thirdSection,
-        start: 'top 60%',
+        start: 'top 70%',
         end: '+=300'
       }
     })
     gsap.from(fourthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: fourthSection,
-        start: 'top 60%',
+        start: 'top 70%',
         end: '+=300'
       }
     })
     gsap.from(fifthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: fifthSection,
-        start: 'top 60%',
+        start: 'top 70%',
         end: '+=300'
       }
     })
     gsap.from(sixthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: sixthSection,
-        start: 'top 60%',
+        start: 'top 70%',
         end: '+=300'
       }
     })
     gsap.from(seventhSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: seventhSection,
-        start: 'top 60%',
+        start: 'top 70%',
         end: '+=300'
       }
     })
     gsap.from(eighthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: eighthSection,
-        start: 'top 60%',
+        start: 'top 70%',
         end: '+=300'
       }
     })
     gsap.from(ninthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: ninthSection,
-        start: 'top 60%',
+        start: 'top 70%',
         end: '+=300'
       }
     })
     gsap.from(tenthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: tenthSection,
-        start: 'top 60%',
+        start: 'top 80%',
         end: '+=300'
       }
     })
 
     // Skill Animation
-    gsap.from(firstSkill, {y: 300, ease: 'power3.out', duration: 1, scrollTrigger: {
+    gsap.from(firstSkill, {y: 200, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: firstSkill,
         start: 'top 120%',
         end: '+=300'
       }
     })
-    gsap.from(secondSkill, {y: 300, ease: 'power3.out', duration: 1, scrollTrigger: {
+    gsap.from(secondSkill, {y: 200, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: secondSkill,
         start: 'top 110%',
         end: '+=300'
       }
     })
-    gsap.from(thirdSkill, {y: 300, ease: 'power3.out', duration: 1, scrollTrigger: {
+    gsap.from(thirdSkill, {y: 200, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: thirdSkill,
         start: 'top 100%',
         end: '+=300'
