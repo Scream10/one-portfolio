@@ -39,7 +39,6 @@ export default function OmbelineDurey() {
     const headlineMobile = mobile.children[0].children[0].children[0];
     const separatorMobile = mobile.children[0].children[0].children[1];
     const descriptionMobile = mobile.children[0].children[1];
-    console.log(imageMobile, headlineMobile, separatorMobile, descriptionMobile)
  
     // Remove init flash
     TweenMax.to(app, 0, {css: {visibility: 'visible'}})
