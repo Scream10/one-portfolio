@@ -1,8 +1,119 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Tilt from 'react-tilt';
+import React, { useRef, useEffect } from 'react';
+import { TimelineLite, gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+gsap.core.globals("ScrollTrigger", ScrollTrigger);
 
 export default function Home() {
+
+  let section = useRef(null);
+  let skill = useRef(null);
+  let tl = new TimelineLite({delay: 0.3});
+
+  useEffect(() => {
+    // Section Const
+    const firstSection = section.children[1];
+    const secondSection = section.children[2];
+    const thirdSection = section.children[3];
+    const fourthSection = section.children[4];
+    const fifthSection = section.children[5];
+    const sixthSection = section.children[6];
+    const seventhSection = section.children[7];
+    const eighthSection = section.children[8];
+    const ninthSection = section.children[9];
+    const tenthSection = section.children[10];
+
+    // Skill Const
+    const firstSkill = skill.children[0];
+    const secondSkill = skill.children[1];
+    const thirdSkill = skill.children[2];
+
+    // Section Animation
+    gsap.from(firstSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: firstSection,
+        start: 'top 60%',
+        end: '+=300'
+      }
+    })
+    gsap.from(secondSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: secondSection,
+        start: 'top 60%',
+        end: '+=300'
+      }
+    })
+    gsap.from(thirdSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: thirdSection,
+        start: 'top 60%',
+        end: '+=300'
+      }
+    })
+    gsap.from(fourthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: fourthSection,
+        start: 'top 60%',
+        end: '+=300'
+      }
+    })
+    gsap.from(fifthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: fifthSection,
+        start: 'top 60%',
+        end: '+=300'
+      }
+    })
+    gsap.from(sixthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: sixthSection,
+        start: 'top 60%',
+        end: '+=300'
+      }
+    })
+    gsap.from(seventhSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: seventhSection,
+        start: 'top 60%',
+        end: '+=300'
+      }
+    })
+    gsap.from(eighthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: eighthSection,
+        start: 'top 60%',
+        end: '+=300'
+      }
+    })
+    gsap.from(ninthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: ninthSection,
+        start: 'top 60%',
+        end: '+=300'
+      }
+    })
+    gsap.from(tenthSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: tenthSection,
+        start: 'top 60%',
+        end: '+=300'
+      }
+    })
+
+    // Skill Animation
+    gsap.from(firstSkill, {y: 300, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: firstSkill,
+        start: 'top 120%',
+        end: '+=300'
+      }
+    })
+    gsap.from(secondSkill, {y: 300, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: secondSkill,
+        start: 'top 110%',
+        end: '+=300'
+      }
+    })
+    gsap.from(thirdSkill, {y: 300, ease: 'power3.out', duration: 1, scrollTrigger: {
+        trigger: thirdSkill,
+        start: 'top 100%',
+        end: '+=300'
+      }
+    })
+  }, [tl]);
+
   return (
     <div>
       <Head>
@@ -12,8 +123,8 @@ export default function Home() {
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
-      <div className="home-animation--bg"></div>
-      <div className="home-animation"></div>
+      {/* <div className="home-animation--bg"></div>
+      <div className="home-animation"></div> */}
 
       <header className="top-bar">
         <Link href="/">
@@ -54,7 +165,7 @@ export default function Home() {
 
       <div className="bottom-bar"></div>
 
-      <div className="main-container">
+      <div className="main-container" ref={el => section = el}>
         <Tilt className="Tilt" options={{ max : 24, scale: .9, perspective: 1000, transition: true }}>
           <div className="Tilt-inner">
             <div className="home-hero">
@@ -119,7 +230,7 @@ export default function Home() {
           </div>
 
           <div className="row">
-          <div className="skills">
+            <div className="skills" ref={el => skill = el}>
               <div className="skill">
                 <div className="skill-img">
                   <img src="undraw_programming_2svr.png" alt="logo development" />
