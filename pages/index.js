@@ -1,13 +1,17 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Tilt from 'react-tilt';
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { TimelineLite, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
+// Enable ScrollTrigger on production
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
 
 export default function Home() {
+
+  // Menu
+  const [navigation, setNavigation] = useState(false);
+  const showNavigation = () => setNavigation(!navigation);
 
   let section = useRef(null);
   let skill = useRef(null);
@@ -15,16 +19,17 @@ export default function Home() {
 
   useEffect(() => {
     // Section Const
-    const firstSection = section.children[1];
-    const secondSection = section.children[2];
-    const thirdSection = section.children[3];
-    const fourthSection = section.children[4];
-    const fifthSection = section.children[5];
-    const sixthSection = section.children[6];
-    const seventhSection = section.children[7];
-    const eighthSection = section.children[8];
-    const ninthSection = section.children[9];
-    const tenthSection = section.children[10];
+    const firstSection = section.children[0];
+    const secondSection = section.children[1];
+    const thirdSection = section.children[2];
+    const fourthSection = section.children[3];
+    const fifthSection = section.children[4];
+    const sixthSection = section.children[5];
+    const seventhSection = section.children[6];
+    const eighthSection = section.children[7];
+    const ninthSection = section.children[8];
+    const tenthSection = section.children[9];
+    console.log(firstSection)
 
     // Skill Const
     const firstSkill = skill.children[0];
@@ -123,9 +128,6 @@ export default function Home() {
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
-      <div className="home-animation--bg"></div>
-      <div className="home-animation"></div>
-
       <header className="top-bar">
         <Link href="/">
           <a className="top-bar__logo">NICOLAS / DIOT</a>
@@ -141,17 +143,40 @@ export default function Home() {
         </Link>
       </header>
 
-      <div className="side-bar-left">
-        {/* <a href="#">
-          <div className="menu__lines">
-            <div className="menu__line menu__line--top"></div>
-            <div className="menu__line menu__line--center"></div>
-            <div className="menu__line menu__line--bottoms"></div>
-          </div>
-          <div className="menu__menu">
-            
-          </div>
-        </a> */}
+      {/* <div className="menu-container">
+        <Link href='#'>
+          <a className="menu" onClick={showNavigation}>
+            <div className="menu__lines">
+              <div className="menu__line menu__line--top"></div>
+              <div className="menu__line menu__line--center"></div>
+              <div className="menu__line menu__line--bottom"></div>
+            </div>
+            <div className="menu__letters">
+              <div className="menu__letter menu__letter--u">u</div>
+              <div className="menu__letter menu__letter--n">n</div>
+              <div className="menu__letter menu__letter--e">e</div>
+              <div className="menu__letter menu__letter--m">m</div>
+            </div>
+          </a>
+        </Link>
+      </div> */}
+      <div className="side-bar-left"></div>
+      <div className={navigation ? 'navigation-container active' : 'navigation-container'}>
+        <div className="navigation">
+          <Link href='/'>
+            <a className="navigation__item">
+              <span className="navigation__item--text">
+                <span className="navigation__item--textinner">Maria Costa</span>
+              </span>
+              <span className="navigation__item--sub">Style Reset 66 Berlin</span>
+              <div className="hover-reveal">
+                <div className="hover-reveal__inner">
+                  <div className="hover-reveal__img"></div>
+                </div>
+              </div>
+            </a>
+          </Link>
+        </div>
       </div>
 
       <div className="side-bar-right">
@@ -174,20 +199,13 @@ export default function Home() {
 
       <div className="bottom-bar"></div>
 
+      <div className="home-hero">
+        <p className="home-hero__title">Portfolio</p>
+        <p className="home-hero__subtitle">Nicolas Diot</p>
+        <div className="home-hero__arrow"></div>
+      </div>        
+
       <div className="main-container" ref={el => section = el}>
-        <Tilt className="Tilt" options={{ max : 24, scale: .9, perspective: 1000, transition: true }}>
-          <div className="Tilt-inner">
-            <div className="home-hero">
-              <p>Nicolas Diot,<br />Développeur Web</p>
-              <div className="home-hero__circle home-hero__circle--1"></div>
-              <div className="home-hero__circle home-hero__circle--2"></div>
-              <div className="home-hero__circle home-hero__circle--3"></div>
-              <div className="home-hero__circle home-hero__circle--4"></div>
-              <img src="logo-arrow-down.png" alt="logo arrow down" className="home-hero__scroll" />
-            </div>
-          </div>
-        </Tilt>
-        
 
         <div className="section">
           <div id="section-about">
