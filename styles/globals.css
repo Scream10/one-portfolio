@@ -29,7 +29,7 @@ a {
 .top-bar {
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 11;
   display: flex;
   height: 40px;
   width: 100%;
@@ -84,7 +84,26 @@ a {
   width: 40px;
   align-items: center;
   background-color: white;
-  transition: width 200ms ease-in-out;
+}
+
+.side-bar-left,
+.side-bar-right,
+.top-bar,
+.bottom-bar {
+  transition: width 200ms ease-in-out, height 200ms ease-in-out, padding 200ms ease-in-out, align-items 200ms ease-in-out;
+}
+
+.active-horizontal-100 {
+  width: 100px !important;
+}
+
+.active-vertical-100 {
+  height: 100px !important;
+}
+
+.active-top-bar {
+  padding: 0 100px 20px 100px;
+  align-items: flex-end;
 }
 
 .menu-container {
@@ -173,6 +192,33 @@ a {
 .menu-container .menu .menu__letters .menu__letter:last-child {
   margin-bottom: 0px;
 }
+.menu-container .menu--close {
+  width: 48px;
+  height: 48px;
+}
+.menu-container .menu--close::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 2px;
+  height: 30px;
+  transform: rotate(45deg);
+  left: 15px;
+  top: 10px;
+}
+.menu-container .menu--close::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 2px;
+  height: 30px;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 15px;
+}
+.menu-container .menu--close .menu__letters--close {
+  display: none;
+}
 
 .navigation-container {
   position: fixed;
@@ -187,6 +233,7 @@ a {
   align-items: center;
 }
 .navigation-container .navigation {
+  justify-content: center;
   display: flex;
   height: 100vh;
   width: 100%;
@@ -206,7 +253,7 @@ a {
 .navigation-container .navigation .navigation__item {
   flex: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
   padding-left: 5rem;
 }
@@ -214,7 +261,7 @@ a {
   counter-increment: menucounter;
   content: counters(menucounter, ".", decimal-leading-zero);
   position: absolute;
-  left: 0;
+  left: 100px;
   border-left: 3px solid #000;
   top: 20%;
   height: 60%;
@@ -232,7 +279,11 @@ a {
   transform: translateX(0);
 }
 .navigation-container .navigation .navigation__item:hover .navigation__item--textinner {
-  color: red;
+  background: linear-gradient(90deg, #0061f3 0%, #00f3d2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #0061f3;
 }
 .navigation-container .navigation .navigation__item:hover .menu__item-sub {
   opacity: 1;
@@ -247,13 +298,13 @@ a {
   padding: 0.5rem;
   display: block;
   overflow: hidden;
-  font-size: 6vw;
+  font-size: 5vw;
   line-height: 100%;
 }
 .navigation-container .navigation .navigation__item .navigation__item--text .navigation__item--textinner {
   display: block;
-  font-family: "Goldenbook", serif;
-  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
   text-transform: uppercase;
   white-space: nowrap;
   color: #000;

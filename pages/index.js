@@ -29,7 +29,6 @@ export default function Home() {
     const eighthSection = section.children[7];
     const ninthSection = section.children[8];
     const tenthSection = section.children[9];
-    console.log(firstSection)
 
     // Skill Const
     const firstSkill = skill.children[0];
@@ -128,7 +127,7 @@ export default function Home() {
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
-      <header className="top-bar">
+      <header className={navigation ? 'top-bar active-vertical-100 active-top-bar' : 'top-bar'}>
         <Link href="/">
           <a className="top-bar__logo">NICOLAS / DIOT</a>
         </Link>
@@ -143,15 +142,15 @@ export default function Home() {
         </Link>
       </header>
 
-      {/* <div className="menu-container">
+      <div className="menu-container">
         <Link href='#'>
-          <a className="menu" onClick={showNavigation}>
+          <a className={navigation ? 'menu--close' : 'menu'} onClick={showNavigation}>
             <div className="menu__lines">
               <div className="menu__line menu__line--top"></div>
               <div className="menu__line menu__line--center"></div>
               <div className="menu__line menu__line--bottom"></div>
             </div>
-            <div className="menu__letters">
+            <div className={navigation ? 'menu__letters--close' : 'menu__letters'}>
               <div className="menu__letter menu__letter--u">u</div>
               <div className="menu__letter menu__letter--n">n</div>
               <div className="menu__letter menu__letter--e">e</div>
@@ -159,14 +158,81 @@ export default function Home() {
             </div>
           </a>
         </Link>
-      </div> */}
-      <div className="side-bar-left"></div>
+      </div>
+
+      <div className={navigation ? 'side-bar-left active-horizontal-100' : 'side-bar-left'}></div>
+
       <div className={navigation ? 'navigation-container active' : 'navigation-container'}>
         <div className="navigation">
-          <Link href='/'>
+          <Link href="/projets/coachme">
             <a className="navigation__item">
               <span className="navigation__item--text">
-                <span className="navigation__item--textinner">Maria Costa</span>
+                <span className="navigation__item--textinner">Coach Me</span>
+              </span>
+              <span className="navigation__item--sub">Style Reset 66 Berlin</span>
+              <div className="hover-reveal">
+                <div className="hover-reveal__inner">
+                  <div className="hover-reveal__img"></div>
+                </div>
+              </div>
+            </a>
+          </Link>
+          <Link href="/projets/semioffice">
+            <a className="navigation__item">
+              <span className="navigation__item--text">
+                <span className="navigation__item--textinner">Semi Office</span>
+              </span>
+              <span className="navigation__item--sub">Style Reset 66 Berlin</span>
+              <div className="hover-reveal">
+                <div className="hover-reveal__inner">
+                  <div className="hover-reveal__img"></div>
+                </div>
+              </div>
+            </a>
+          </Link>
+          <Link href="/projets/ombelinedurey">
+            <a className="navigation__item">
+              <span className="navigation__item--text">
+                <span className="navigation__item--textinner">Ombeline Durey</span>
+              </span>
+              <span className="navigation__item--sub">Style Reset 66 Berlin</span>
+              <div className="hover-reveal">
+                <div className="hover-reveal__inner">
+                  <div className="hover-reveal__img"></div>
+                </div>
+              </div>
+            </a>
+          </Link>
+          <Link href="/projets/uchf">
+            <a className="navigation__item">
+              <span className="navigation__item--text">
+                <span className="navigation__item--textinner">UCHF</span>
+              </span>
+              <span className="navigation__item--sub">Style Reset 66 Berlin</span>
+              <div className="hover-reveal">
+                <div className="hover-reveal__inner">
+                  <div className="hover-reveal__img"></div>
+                </div>
+              </div>
+            </a>
+          </Link>
+          <Link href="/projets/multigazsensor">
+            <a className="navigation__item">
+              <span className="navigation__item--text">
+                <span className="navigation__item--textinner">Multi Gaz Sensor</span>
+              </span>
+              <span className="navigation__item--sub">Style Reset 66 Berlin</span>
+              <div className="hover-reveal">
+                <div className="hover-reveal__inner">
+                  <div className="hover-reveal__img"></div>
+                </div>
+              </div>
+            </a>
+          </Link>
+          <Link href="/projets/votregaragebois">
+            <a className="navigation__item">
+              <span className="navigation__item--text">
+                <span className="navigation__item--textinner">Votre Garage Bois</span>
               </span>
               <span className="navigation__item--sub">Style Reset 66 Berlin</span>
               <div className="hover-reveal">
@@ -179,7 +245,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="side-bar-right">
+      <div className={navigation ? 'side-bar-right active-horizontal-100' : 'side-bar-right'}>
         <Link href="https://www.linkedin.com/in/nicolas-diot-96b0b313a/">
           <a target="_blank" rel="noreferrer">
             <img className="logo-social-linkedin" src="logo_linkedin.png" alt="linkedin logo" />
@@ -197,7 +263,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="bottom-bar"></div>
+      <div className={navigation ? 'bottom-bar active-vertical-100' : 'bottom-bar'}></div>
 
       <div className="home-hero">
         <p className="home-hero__title">Portfolio</p>
