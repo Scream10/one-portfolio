@@ -759,34 +759,42 @@ footer a:hover {
 
 .project-banner {
   position: relative;
+}
+.project-banner .project-banner__content {
   width: 100%;
   height: 500px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: reveal 1s ease-in-out forwards;
 }
-.project-banner::before {
+.project-banner .project-banner__content::before {
   content: "";
   position: absolute;
-  background-color: #0061f3;
-  animation: slider 1s ease-in-out;
+  top: 0;
   left: 0;
-  right: 0;
-  width: 0;
+  width: 100%;
   height: 100%;
+  background: #00398f;
+  z-index: 20;
+  animation: reveal 0.8s reverse forwards;
+  animation-delay: 0.8s;
+  transform-origin: right;
 }
-.project-banner img {
+.project-banner .project-banner__content img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.project-banner #fond-uchf {
+.project-banner .project-banner__content #fond-uchf {
   object-position: 0% 37%;
 }
-.project-banner #fond-multi {
+.project-banner .project-banner__content #fond-multi {
   object-position: 0% 88%;
 }
-.project-banner #fond-vgb {
+.project-banner .project-banner__content #fond-vgb {
   object-position: 0% 6%;
 }
-.project-banner .project-title {
+.project-banner .project-banner__content .project-title {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -794,7 +802,7 @@ footer a:hover {
   top: 0;
   left: 0;
 }
-.project-banner .project-title h2 {
+.project-banner .project-banner__content .project-title h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -804,21 +812,16 @@ footer a:hover {
   height: 100%;
   font-weight: 600;
 }
-.project-banner .project-title .text-center {
+.project-banner .project-banner__content .project-title .text-center {
   text-align: center;
 }
 
-@keyframes slider {
+@keyframes reveal {
   0% {
-    width: 0%;
-  }
-  50% {
-    left: 0;
-    width: 100%;
+    transform: scaleX(0);
   }
   100% {
-    left: 100%;
-    width: 0%;
+    transform: scaleX(1);
   }
 }
 .project-container .project-information {

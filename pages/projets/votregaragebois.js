@@ -169,9 +169,11 @@ export default function VotreGarageBois() {
       <div className="bottom-bar"></div>
 
       <div className="project-banner">
-        <img src="../fond-vgb.png" alt="projet UCHF" id="fond-vgb" />
-        <div className="project-title">
-          <h2 className="text-center">Votre Garage Bois</h2>
+        <div className="project-banner__content">
+          <img src="../fond-vgb.png" alt="projet UCHF" id="fond-vgb" />
+          <div className="project-title">
+            <h2 className="text-center">Votre Garage Bois</h2>
+          </div>
         </div>
       </div>
 

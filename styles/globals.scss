@@ -780,66 +780,69 @@ footer {
 
 .project-banner {
   position: relative;
-  width: 100%;
-  height: 500px;
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 97, 243, 1);
-    animation: slider 1s ease-in-out;
-    left: 0;
-    right: 0;
-    width: 0;
-    height: 100%;
-  }
-  img {
+  .project-banner__content {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  #fond-uchf {
-    object-position: 0% 37%;
-  }
-  #fond-multi {
-    object-position: 0% 88%;
-  }
-  #fond-vgb {
-    object-position: 0% 6%;
-  }
-  .project-title {
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    h2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 48px;
-      line-height: 60px;
-      color: white;
+    height: 500px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: reveal 1s ease-in-out forwards;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: 100%;
-      font-weight: 600;
+      background: rgb(0, 57, 143);
+      z-index: 20;
+      animation: reveal 0.8s reverse forwards;
+      animation-delay: 0.8s;
+      transform-origin: right;
     }
-    .text-center {
-      text-align: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #fond-uchf {
+      object-position: 0% 37%;
+    }
+    #fond-multi {
+      object-position: 0% 88%;
+    }
+    #fond-vgb {
+      object-position: 0% 6%;
+    }
+    .project-title {
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        line-height: 60px;
+        color: white;
+        height: 100%;
+        font-weight: 600;
+      }
+      .text-center {
+        text-align: center;
+      }
     }
   }
 }
 
-@keyframes slider {
+@keyframes reveal {
   0% {
-    width: 0%;
-  }
-  50% {
-    left: 0;
-    width: 100%;
+    transform: scaleX(0);
   }
   100% {
-    left: 100%;
-    width: 0%;
+    transform: scaleX(1);
   }
 }
 

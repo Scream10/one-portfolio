@@ -136,9 +136,11 @@ export default function CoachMe() {
       <div className="bottom-bar"></div>
 
       <div className="project-banner">
-        <img src="../coachme-3.png" alt="coachme" />
-        <div className="project-title">
-          <h2>Coach Me</h2>
+        <div className="project-banner__content">
+          <img src="../coachme-3.png" alt="coachme" />
+          <div className="project-title">
+            <h2>Coach Me</h2>
+          </div>
         </div>
       </div>
 

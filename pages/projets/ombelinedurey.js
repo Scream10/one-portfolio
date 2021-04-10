@@ -169,9 +169,11 @@ export default function OmbelineDurey() {
       <div className="bottom-bar"></div>
 
       <div className="project-banner">
-        <img src="../ombelinedurey.jpg" alt="projet ombelinedurey" />
-        <div className="project-title">
-          <h2>Ombeline Durey</h2>
+        <div className="project-banner__content">
+          <img src="../ombelinedurey.jpg" alt="projet ombelinedurey" />
+          <div className="project-title">
+            <h2>Ombeline Durey</h2>
+          </div>
         </div>
       </div>
 

@@ -136,9 +136,11 @@ export default function SemiOffice() {
       <div className="bottom-bar"></div>
 
       <div className="project-banner">
-        <img src="../ac-studio-1.png" alt="projet semi office" />
-        <div className="project-title">
-          <h2>Semi Office</h2>
+        <div className="project-banner__content">
+          <img src="../ac-studio-1.png" alt="projet semi office" />
+          <div className="project-title">
+            <h2>Semi Office</h2>
+          </div>
         </div>
       </div>
 

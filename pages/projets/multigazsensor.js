@@ -169,9 +169,11 @@ export default function MultiGazSensor() {
       <div className="bottom-bar"></div>
 
       <div className="project-banner">
-        <img src="../fond-multi.png" alt="projet UCHF" id="fond-multi" />
-        <div className="project-title">
-          <h2 className="text-center">Multi Gaz Sensor</h2>
+        <div className="project-banner__content">
+          <img src="../fond-multi.png" alt="projet UCHF" id="fond-multi" />
+          <div className="project-title">
+            <h2 className="text-center">Multi Gaz Sensor</h2>
+          </div>
         </div>
       </div>
 

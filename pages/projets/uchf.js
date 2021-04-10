@@ -169,9 +169,11 @@ export default function Uchf() {
       <div className="bottom-bar"></div>
 
       <div className="project-banner">
-        <img src="../fond-uchf.png" alt="projet UCHF" id="fond-uchf" />
-        <div className="project-title">
-          <h2 className="text-center">Union des Consuls Honoraires<br /> de France</h2>
+        <div className="project-banner__content">
+          <img src="../fond-uchf.png" alt="projet UCHF" id="fond-uchf" />
+          <div className="project-title">
+            <h2 className="text-center">Union des Consuls Honoraires<br /> de France</h2>
+          </div>
         </div>
       </div>
 

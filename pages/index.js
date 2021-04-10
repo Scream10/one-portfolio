@@ -34,7 +34,7 @@ export default function Home() {
     // Section Animation
     gsap.from(firstSection, {y: 80, opacity: 0, ease: 'power3.out', duration: 1, scrollTrigger: {
         trigger: firstSection,
-        start: 'top 60%',
+        start: 'top 50%',
         end: '+=300'
       }
     })
@@ -142,7 +142,16 @@ export default function Home() {
       </header>
 
       <div className="side-bar-left">
-        {/* <a href="#">MENU</a> */}
+        {/* <a href="#">
+          <div className="menu__lines">
+            <div className="menu__line menu__line--top"></div>
+            <div className="menu__line menu__line--center"></div>
+            <div className="menu__line menu__line--bottoms"></div>
+          </div>
+          <div className="menu__menu">
+            
+          </div>
+        </a> */}
       </div>
 
       <div className="side-bar-right">
