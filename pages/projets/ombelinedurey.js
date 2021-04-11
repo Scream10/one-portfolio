@@ -9,6 +9,8 @@ gsap.core.globals("ScrollTrigger", ScrollTrigger);
 
 export default function OmbelineDurey() {
 
+  console.log('.project-concept--mobile .project-concept__img--mobile img');
+
   let app = useRef(null);
   let image = useRef(null);
   let concept = useRef(null);

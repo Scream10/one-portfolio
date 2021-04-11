@@ -448,6 +448,12 @@ a {
   padding-right: 80px;
   padding-left: 80px;
 }
+@media screen and (max-width: 576px) {
+  .main-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 .home-hero {
   position: relative;
@@ -1166,6 +1172,12 @@ footer {
     top: -100px;
     width: 70%;
     margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .project-concept__img--mobile img {
+      top: -20px;
+      margin-left: 50px;
+    }
   }
 }
 
