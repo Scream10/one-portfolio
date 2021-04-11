@@ -29,7 +29,7 @@ a {
 .top-bar {
   position: fixed;
   top: 0;
-  z-index: 11;
+  z-index: 12;
   display: flex;
   height: 40px;
   width: 100%;
@@ -78,7 +78,7 @@ a {
 .side-bar-left {
   position: fixed;
   left: 0;
-  z-index: 10;
+  z-index: 11;
   display: flex;
   height: calc(100vh - 40px);
   width: 40px;
@@ -105,11 +105,17 @@ a {
   align-items: flex-end;
 }
 
+@media screen and (max-width: 576px) {
+  .menu-hide {
+    display: none;
+  }
+}
+
 .menu-container {
   position: fixed;
   left: 0;
   top: 50%;
-  z-index: 11;
+  z-index: 12;
   display: flex;
   height: 50px;
   width: 48px;
@@ -228,7 +234,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   height: 100vh;
   width: 0;
   visibility: hidden;
@@ -255,7 +261,7 @@ a {
     .navigation__item {
       flex: none;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       position: relative;
       padding-left: 5rem;
       &:before {
@@ -290,11 +296,11 @@ a {
         background-clip: text;
         color: rgba(0, 97, 243, 1);
       }
-      &:hover .menu__item-sub {
+      &:hover .navigation__item--sub {
         opacity: 1;
         transform: translateX(0);
       }
-      &:hover .menu__item-sub::before {
+      &:hover .navigation__item--sub::before {
         transform: rotate(22.5deg) scale3d(1, 1, 1);
       }
       .navigation__item--text {
@@ -305,6 +311,7 @@ a {
         overflow: hidden;
         font-size: 5vw;
         line-height: 100%;
+        margin-left: 200px;
         .navigation__item--textinner {
           display: block;
           font-family: "Poppins", sans-serif;
@@ -314,8 +321,17 @@ a {
           color: #000;
         }
       }
+      @media screen and (max-width: 992px) {
+        .navigation__item--text {
+          font-size: 4vw;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .navigation__item--text {
+          margin-left: 100px;
+        }
+      }
       .navigation__item--sub {
-        display: none;
         text-transform: uppercase;
         font-weight: bold;
         white-space: nowrap;
@@ -323,20 +339,26 @@ a {
         position: relative;
         margin-left: 2rem;
         padding-left: 3rem;
+        top: 2.5rem;
         opacity: 0;
         transform: translateX(-1rem);
         transition: transform 0.3s, opacity 0.3s;
-        &::before {
+        &:before {
           content: "";
           position: absolute;
           left: 0;
-          top: 15%;
+          top: -25%;
           width: 1px;
           height: 70%;
           background: #000;
           transform-origin: 0 100%;
           transform: rotate(22.5deg) scale3d(1, 0, 1);
           transition: transform 0.3s;
+        }
+      }
+      @media screen and (max-width: 992px) {
+        .navigation__item--sub {
+          display: none;
         }
       }
       .hover-reveal {
@@ -370,7 +392,7 @@ a {
   visibility: visible;
 }
 // Update below
-.js .menu__item-textinner {
+.js .navigation__item-textinner {
   transform: translateY(100%);
 }
 

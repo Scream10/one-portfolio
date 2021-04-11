@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useRef, useEffect } from 'react';
 import { TweenMax, TimelineLite, Power3, gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import MenuProjet from './menuprojets';
 gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
 
@@ -96,44 +97,7 @@ export default function CoachMe() {
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
-      <header className="top-bar">
-        <Link href="/">
-          <a className="top-bar__logo">NICOLAS / DIOT</a>
-        </Link>
-        <Link href="mailto:nicolasdiot10@gmail.com?subject=Travaillons%20ensemble!">
-          <a className="top-bar-info">
-            <div className="top-bar__mail">
-              <div>CONTACTEZ MOI</div>
-              <div className="top-bar__mail-underline"></div>
-            </div>
-            <img className="top-bar__mail-logo" src="../logo_mail.png" alt="mail logo" />
-          </a>
-        </Link>
-      </header>
-
-      <div className="side-bar-left">
-        {/* <a href="#">MENU</a> */}
-      </div>
-
-      <div className="side-bar-right">
-        <Link href="https://www.linkedin.com/in/nicolas-diot-96b0b313a/">
-          <a target="_blank" rel="noreferrer">
-            <img className="logo-social-linkedin" src="../logo_linkedin.png" alt="linkedin logo" />
-          </a>
-        </Link>
-        <Link href="https://www.malt.fr/profile/nicolasdiot" >
-          <a target="_blank" rel="noreferrer">
-            <img className="logo-social" src="../logo_malt.png" alt="malt logo" />
-          </a>
-        </Link>
-        <Link href="https://github.com/Scream10">
-          <a target="_blank" rel="noreferrer">
-            <img className="logo-social" src="../logo_github.png" alt="github logo" />
-          </a>
-        </Link>
-      </div>
-
-      <div className="bottom-bar"></div>
+      <MenuProjet />
 
       <div className="project-banner">
         <div className="project-banner__content">
