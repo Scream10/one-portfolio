@@ -1195,6 +1195,12 @@ footer {
     object-fit: cover;
     box-shadow: 40px 50px 30px rgba(0, 0, 0, 0.1);
   }
+  @media screen and (max-width: 768px) {
+    .project-img {
+      width: 120%;
+      height: 400px;
+    }
+  }
   .project-img--1 {
     left: 20%;
   }

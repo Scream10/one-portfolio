@@ -1164,6 +1164,12 @@ footer a:hover {
   object-fit: cover;
   box-shadow: 40px 50px 30px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 768px) {
+  .project-img .project-img {
+    width: 120%;
+    height: 400px;
+  }
+}
 .project-img .project-img--1 {
   left: 20%;
 }
