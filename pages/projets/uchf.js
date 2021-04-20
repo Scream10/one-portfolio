@@ -126,7 +126,7 @@ export default function Uchf() {
       <Head>
         <title>Nicolas Diot | UCHF</title>
         <meta name="description" content="Le site associatif de l'UCHF, Union des Consuls Honoraires de France, regroupe
-                    toute l'actualité et les information en lien avec le Consulat et les Consuls de France."/>
+                    toute l'actualité et les informations en lien avec le Consulat et les Consuls de France."/>
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
@@ -185,8 +185,8 @@ export default function Uchf() {
                   </div>
                   <div className="project-concept__info">
                     Le site associatif de l'UCHF, Union des Consuls Honoraires de France, regroupe
-                    toute l'actualité et les information en lien avec le Consulat et les Consuls de France.
-                    Pour ce client, j'ai réalisé une refonte d'un site existant et ajouter de nouvelles fonctionnalités.
+                    toute l'actualité et les informations en lien avec le Consulat et les Consuls de France.
+                    Pour ce client, j'ai réalisé une refonte d'un site existant et ajouté de nouvelles fonctionnalités.
                   </div>
                 </div>
               </div>

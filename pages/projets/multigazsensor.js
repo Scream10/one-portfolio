@@ -126,7 +126,7 @@ export default function MultiGazSensor() {
       <Head>
         <title>Nicolas Diot | Multi Gaz Sensor</title>
         <meta name="description" content="Multi gaz sensor est un site produit de l'entreprise Partelec. Le site
-                    propre des produits innovants dans le domaine médicale.s" />
+                    propose des produits innovants dans le domaine médical." />
         <link rel="icon" href="../favicon-n.png" />
       </Head>
 
@@ -185,7 +185,7 @@ export default function MultiGazSensor() {
                   </div>
                   <div className="project-concept__info">
                     Multi gaz sensor est un site produit de l'entreprise Partelec. Le site
-                    propre des produits innovants dans le domaine médicale. En effet, leurs capteurs
+                    propose des produits innovants dans le domaine médical. En effet, leurs capteurs
                     optiques permettent de détecter les différents gaz au sein de différents processus
                     tels que la méthanisation.
                   </div>
